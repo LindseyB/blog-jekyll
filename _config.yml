@@ -36,7 +36,9 @@ twitter:
 theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+
 logo: "/assets/images/android-chrome-192x192.png"
+
 defaults:
   # _posts
   - scope:
@@ -50,6 +52,20 @@ defaults:
       related: true
       classes: wide
 
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/lindseybieda"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lindseyb"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/lindseybieda"
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      url: "https://witches.live/@lindsey"
 
 head_scripts:
   - https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js
