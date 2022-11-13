@@ -6,6 +6,6 @@ Is it hard having a female avatar on the internet? Do people take your arguments
 
 [Mustachify.me](http://mustachify.me/)! Now you too can be normal manpeople! 
 
-![Lindsey with mustasche](me.jpg)
+![Lindsey with mustasche](/assets/images/hard-having-a-female-avatar-on-the-internet/me.jpg)
 
 Problem solved! You will no longer distract and enrage men on the internet with your female face.

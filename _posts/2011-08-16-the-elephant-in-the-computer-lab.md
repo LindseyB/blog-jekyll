@@ -8,7 +8,7 @@ The lack of women in the computing fields is something that is surprisingly cont
 
 It's a simple matter of examining the hard data to understand just how much of a non-argument these statements are. The actual percentage of women in the computing fields in 2009 was 25%, while the total percent of the professional workforce was 58% [1]. These numbers are not improving nearly as quickly in computer science as all of the other STEM fields and actually has been declining since 1985[2]. In 2010 only 13.8% of the bachelor degrees in computer science were awarded to women, which is surprisingly an increase from the previous year[3].
 
-![Women BS degrees in STEM fields](degrees.png)
+![Women BS degrees in STEM fields](/assets/images/the-elephant-in-the-computer-lab/degrees.png)
 
 ## 2. "If more women wanted to be in the computing fields they would be" 
 

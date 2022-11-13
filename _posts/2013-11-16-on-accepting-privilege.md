@@ -25,7 +25,7 @@ You may be cringing by now. In fact I'd be really surprised if you aren't cringi
 
 When you have a lot of privilege and someone tells you have beneficial it is to your life it can feel like someone telling you that you got where you are through no act on your own. It can feel like someone saying, "That 'free will' you think you have, yeah... not a thing". But here's the thing, free will versus determinism is a philosophical debate. Privilege vs some mythical idea of a meritocracy is not. 
 
-![It is your destiny](destiny.gif)
+![It is your destiny](/assets/images/on-accepting-privilege/destiny.gif)
 
 There's a lot of solid evidence that people are treated differently based on the perception of who they are. To see this evidence all I takes is to pay attention to the news, or watch [any sort](http://www.today.com/entertainment/big-brother-contestants-learn-they-lost-jobs-due-racist-homophobic-4B11210469) of [television](http://www.theguardian.com/tv-and-radio/shortcuts/2012/may/02/2-broke-girls-racist-baffling), [read a book](https://www.goodreads.com/shelf/show/social-justice) (I highly recommend [A People's History of the United States](http://www.historyisaweapon.com/zinnapeopleshistory.html)), [consume pop culture](http://www.racialicious.com/).
 

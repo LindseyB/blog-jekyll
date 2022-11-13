@@ -2,7 +2,7 @@
 title: Women in Computing Factsheet
 ---
 
-![BS Degrees by Field](degrees.png)
+![BS Degrees by Field](/assets/images/women-in-computing-factsheet/degrees.png)
 
 source: [American Institute of Physics](http://www.aip.org/statistics/trends/reports/spring07a.pdf)
 
@@ -10,11 +10,11 @@ source: [American Institute of Physics](http://www.aip.org/statistics/trends/rep
 
 source: [CRA Taulbee Survey (2009-2010)](http://www.cra.org/resources/taulbee/)
 
-![Percent of Women Working in Computing](working_computing.png)
+![Percent of Women Working in Computing](/assets/images/women-in-computing-factsheet/working_computing.png)
 
 source: [the evolving ultrasaurus](http://www.ultrasaurus.com/sarahblog/2010/11/seek-to-inspire/)
 
-![Famous Programmers by Gender](famous_programmers.png)
+![Famous Programmers by Gender](/assets/images/women-in-computing-factsheet/famous_programmers.png)
 
 source: [Grokcode](http://grokcode.com/37/famous-programmers-from-adleman-to-zimmermann/)
 

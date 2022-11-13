@@ -10,7 +10,7 @@ Saying it's awesome to be a "girl" in tech is disingenuous. I am a woman. I love
 
 When I speak of diversity issues in tech I don't mean we should just fight for more women. Historically, when people push for equality certain groups get left behind. During the women's suffrage movement in the U.S. African-American women still found themselves unable to vote in a number of states and faced racism even at the hands of white suffragists. We can no longer focus on equality for some and make sure that we include __everyone__ in the discussion. If we are to enter into a world of ubiquitous computing without everyone at the table creating the technology that will shape our lives we will find ourselves starved for the talent and creativity required.
 
-![I can't believe I still have to fight for this shit](cant-believe.jpeg) 
+![I can't believe I still have to fight for this shit](/assets/images/the-first-step/cant-believe.jpeg) 
 
 We absolutely must need to recognize tech has a diversity problem. Recognize it and keep it in our heads at all times so we can focus on fixing the wrongs at all times. 
 

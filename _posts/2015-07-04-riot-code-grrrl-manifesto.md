@@ -9,9 +9,9 @@ Just download a PDF for your selected format and print (two sided is way better,
 
 Download:
 
-[Two Sided Printout](https://rarlindseysmash.com/zines/riotcodegrrrlmanifesto-twosided.pdf)
+[Two Sided Printout](/assets/zines/riotcodegrrrlmanifesto-twosided.pdf)
 
-[One Sided Printout](https://rarlindseysmash.com/zines/riotcodegrrrlmanifesto-onesided.pdf)
+[One Sided Printout](/assets/zines/riotcodegrrrlmanifesto-onesided.pdf)
 
 
 The gist that came before the zine:

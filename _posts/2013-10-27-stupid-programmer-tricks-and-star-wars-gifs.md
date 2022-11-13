@@ -32,7 +32,7 @@ The next step was getting a listing of quotes. Luckily, the pirate community lov
 
 Nothing about any of the pieces to get this code working was hard. It was just a matter of finding the correct pieces, leveraging VLC to do the hard work, and mashing it all together.
 
-![Generated Star Wars Gif](star_wars.gif)
+![Generated Star Wars Gif](/assets/images/stupid-programmer-tricks-and-star-wars-gifs/star_wars.gif)
 
 I wanted to take it further and so for a company hack-a-thon I did. Not everyone was going to download the code and get it running (it can be a pain in the ass). So, I decided to make a twitter bot that would tweet a random gif every hour. Sharing Star Wars gifs for the betterment of humanity.
 

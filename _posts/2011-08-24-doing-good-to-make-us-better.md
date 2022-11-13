@@ -5,7 +5,7 @@ title: Doing Good to Make Us Better
 > "It's such a transformative field for society as a whole. And without the involvement of a diverse group of people, the results of what we do are not going to be appealing or useful to all aspects of our society. A piece of our challenge is to make computing, and all that it enables, accessible to everyone. That's an ideal." 
 <div class="citation"><cite>- Frances E Allen [1]</cite></div>
 
-![Making math pink](smbc.gif)
+![Making math pink](/assets/images/doing-good-to-make-us-better/smbc.gif)
 
 The lack of women in computing is generally an issue that universities have taken a great interest in. Many of them have outreach programs for high school aged women and other minorities in the computing field. However, every single one of us in the community can take ownership of this issue and do something to improve it. Making computer science pink won't increase the number of women, instead, we need to build up support and encouragement for all students. 
 

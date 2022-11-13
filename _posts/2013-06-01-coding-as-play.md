@@ -12,7 +12,7 @@ However, not all things that help your skill as a programmer need to be side pro
 
 Play is extremely valuable to learning. I recently experimented to get myself back into the mindset of playing with code not to achieve some set goal, but just toy around until I made something happen that I liked. I purposely picked a language I hadn't used since high school (qBASIC) since it really has a lot of great aspects for play built right into the language. Drawing and making sound in qBASIC is dead simple and thanks to [QB64](http://www.qb64.net/) qBASIC is given new life on modern operating systems.
 
-![Keyboard Time Running on Windows](keyboardtime.png)
+![Keyboard Time Running on Windows](/assets/images/coding-as-play/keyboardtime.png)
 
 In the end I came up with [keyboardtime](https://github.com/LindseyB/keyboardtime); a name that probably came from my desire to play [BurgerTime](http://en.wikipedia.org/wiki/BurgerTime). My initial goal with it was nothing and had I meant this to be a serious project I probably would have looked up what a keyboard looks like or what notes go where, but for this I didn't care (I did look up frequencies for notes because trying to guess would be a terrible exercise in brute forcing). My goal was to make something that ran and did something I liked and in the end I learned how to do something I never knew how to do before. I had never created a mouse cursor in qBASIC. 
 
