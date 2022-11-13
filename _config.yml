@@ -36,7 +36,7 @@ twitter:
 theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
-
+logo: "/assets/images/android-chrome-192x192.png"
 defaults:
   # _posts
   - scope:
