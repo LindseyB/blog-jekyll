@@ -1,0 +1,21 @@
+---
+layout: single
+classes: wide
+---
+
+<h1>Projects</h1>
+
+<div class="grid">
+    {% for project in site.data.projects %}
+    <div class="grid-item">
+        <a alt="{{ project.name }}" href="{{ project.link }}" title="{{ project.name }}">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    {{ project.name }}
+                </div>
+                <div class="panel-body" style="background: url('{{ project.image }}') no-repeat; background-size: cover;"></div>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
