@@ -39,6 +39,18 @@ theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      comments: false
+      share: true
+      related: true
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
