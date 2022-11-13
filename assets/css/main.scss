@@ -63,7 +63,28 @@ $header-font-family : $sans-serif-narrow;
 }
 
 .greedy-nav {
-	background: none;
+	background: none !important;
+}
+
+.button{
+	display:block;
+	padding:1em 3em;
+	border:0.16em solid #6272a4;
+	margin: 2em auto;
+	box-sizing: border-box;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-family:'Roboto',sans-serif;
+	font-weight:600;
+	color: #6272a4;
+	text-align:center;
+	transition: all 0.15s;
+	max-width: 700px;
+}
+
+.button:hover{
+	color:#efefef;
+	background-color: #6272a4;
 }
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin

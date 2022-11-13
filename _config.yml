@@ -24,7 +24,7 @@ name: Lindsey Bieda
 email: lindsey@rarlindseysmash.com
 description: >- # this means to ignore newlines until "baseurl:"
   Website for Lindsey Bieda a software engineer and hacker. 
-baseurl: "https://rarlindseysmash.com" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rarlindseysmash.com" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "LindseyB/blog-jekyll"
 twitter_username: lindseybieda
