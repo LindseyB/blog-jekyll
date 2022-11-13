@@ -21,5 +21,42 @@ $header-font-family : $sans-serif-narrow;
 	background-repeat: no-repeat;
 }
 
+.panel-heading {
+	font-family: 'Fira Mono', sans-serif;
+	font-size: 1em;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.panel {
+	border: solid 1px #efefef;
+	border-radius: 10px;
+}
+
+.panel-body {
+	color: #f8f8f2;
+	font-size: 0.8em;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.panel-heading:hover {
+	text-decoration: none ;
+}
+
+.projects .panel-body {
+	min-height: 300px;
+}
+
+.grid {
+	margin: 0 auto;
+}
+
+.grid-item {
+	width: 400px;
+	margin-bottom: 25px;
+	max-width: 100%;
+}
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
