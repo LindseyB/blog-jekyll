@@ -9,3 +9,9 @@ if (grid) {
     stagger: 30,
   });
 }
+
+function addDarkmodeWidget() {
+  new Darkmode({label: '🌓'}).showWidget();
+}
+
+window.addEventListener('load', addDarkmodeWidget);
