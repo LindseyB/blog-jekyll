@@ -1,8 +1,8 @@
 main:
   - title: Writing
-    url: /archive/
+    url: /archive
   - title: About
-    url: /about/
+    url: /about
   - title: Resume
     url: https://lindseyb.github.io/resume/
   - title: Art
