@@ -14,7 +14,7 @@ I'm currently a remote worker for GitHub living in the bay area and a huge fan o
 * <i class="fab fa-fw fa-github"></i> [@LindseyB](https://github.com/LindseyB)
 * <i class="fab fa-fw fa-itch-io"></i> [LindseyBieda](https://lindseybieda.itch.io)
 * <i class="fab fa-fw fa-twitch"></i> [BeEkkoDoCrimes](https://www.twitch.tv/beekkodocrimes/)
-* <i class="fab fa-fw fa-mastodon"></i><a href="https://witches.live/@lindsey" rel="me">@lindsey@witches.live</a>
+* <i class="fab fa-fw fa-mastodon"></i><a href="https://witchhat.house/@lindsey" rel="me">@lindsey@witchhat.house</a>
 * 🐞 [LindseyB](https://cohost.org/lindseyb)
 
 
