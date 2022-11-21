@@ -65,7 +65,7 @@ Then add all of your records that mailgun is suggesting for you. Keep in mind th
 
 When you're done it should look something like this: 
 
-[Screenshot of DigitalOcean DNS entries with the required entires and some pieces of data censored out](https://i.imgur.com/WIOw1Ll.png)
+![Screenshot of DigitalOcean DNS entries with the required entires and some pieces of data censored out](https://i.imgur.com/WIOw1Ll.png)
 
 Make sure your DNS settings verify on Mailgun before moving forward. DNS settings can take a little bit to propogate depending on a lot of complex factors. For me ultimately it ended up taking 30 minutes. 
 
