@@ -65,7 +65,7 @@ footer:
       url: "https://instagram.com/lindseybieda"
     - label: "Mastodon"
       icon: "fab fa-fw fa-mastodon"
-      url: "https://witchhat.house/@lindsey"
+      url: "https://witches.rest/@lindsey"
 
 head_scripts:
   - https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js
