@@ -77,6 +77,7 @@ date: 2022-06-05
 * [Gryphon's Tea](https://www.gryphonstea.com/)
 * [Riddle's Tea Shoppe](https://riddlesteashoppe.com/)
 * [Pitch Black North](https://www.pitchblacknorth.com/)
+* [Petals and Poison](https://www.petalsandpoison.com/)
 
 ## Mechanical Keyboards
 * [Kono](https://kono.store/)
