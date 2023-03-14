@@ -30,6 +30,7 @@ date: 2022-06-05
 * [Stay Home Club](https://stayhomeclub.com/)
 * [KALMA](https://www.shopkalma.com/)
 * [Lively Ghosts](https://www.livelyghosts.com/)
+* [DASH OF PEP](https://dashofpep.com/)
 
 ## Jewelry
 
