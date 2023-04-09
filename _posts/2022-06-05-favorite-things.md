@@ -107,3 +107,10 @@ date: 2022-06-05
 * [HausWitch](https://hauswitchstore.com/)
 * [Sea Witch Botanicals](https://seawitchbotanicals.com/)
 * [L'esquelet](https://lesquelet.storenvy.com/)
+
+## Beauty 
+
+* [Cirque Colors](https://www.cirquecolors.com/)
+* [Halo Taco](https://www.holotaco.com/)
+* [mooncat](https://www.mooncat.com/)
+* [Black Moon Cosmetics](https://www.blackmooncosmetics.com/)
