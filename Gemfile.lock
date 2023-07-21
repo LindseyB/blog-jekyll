@@ -89,7 +89,6 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
-  x86_64-linux
 
 DEPENDENCIES
   http_parser.rb (~> 0.6.0)
@@ -101,4 +100,4 @@ DEPENDENCIES
   wdm (~> 0.1.1)
 
 BUNDLED WITH
-   2.3.7
+   2.4.13
