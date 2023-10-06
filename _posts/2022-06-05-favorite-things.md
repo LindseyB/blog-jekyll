@@ -97,6 +97,7 @@ date: 2022-06-05
 * [Keeb Monkey](https://www.keebmonkey.com/)
 * [Keychron](https://www.keychron.com/)
 * [Mintlodica](https://mintlodica.com/)
+* [Osume Keys](https://osumekeys.com/)
 
 ## Witchy Supplies
 * [WytchWood](https://wytchwood.com/)
