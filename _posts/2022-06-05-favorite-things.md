@@ -98,6 +98,7 @@ date: 2022-06-05
 * [Keychron](https://www.keychron.com/)
 * [Mintlodica](https://mintlodica.com/)
 * [Osume Keys](https://osumekeys.com/)
+* [Personal Loot](https://personalloot.com/)
 
 ## Witchy Supplies
 * [WytchWood](https://wytchwood.com/)
