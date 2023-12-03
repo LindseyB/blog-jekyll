@@ -13,6 +13,8 @@ $sans-serif-narrow  : 'Playfair Display', serif;
 $global-font-family : $serif;
 $header-font-family : $sans-serif-narrow;
 
+$border-color: rgba(255, 255, 255, 0);
+
 .site-title {
 	font-size: 2em;
 }
@@ -98,6 +100,29 @@ $header-font-family : $sans-serif-narrow;
 .masthead__menu-item {
 	font-family: 'Fira Mono', sans-serif;
 }
+
+.darkmode--activated {
+	.panel {
+		border: solid 1px #efefef2a;
+	}
+
+	.panel-body, .panel-heading {
+		background-color: #efefef14 !important;
+	}
+
+	body, h1, h2, h3, h4, h5, h6, .greedy-nav a {
+		color: #e8e8e8 !important;
+	}
+
+	.archive__item-excerpt, p, li, .page__meta, .taxonomy__index a, .taxonomy__count {
+		color: #a6a6a6 !important;
+	}
+
+	code {
+		background-color: #efefef14 !important;
+	}
+}
+
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
