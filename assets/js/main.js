@@ -11,7 +11,12 @@ if (grid) {
 }
 
 function addDarkmodeWidget() {
-  new Darkmode({label: '🌓'}).showWidget();
+  new Darkmode(
+    {
+      label: '🌓',
+      time: '0.0s',
+    }
+  ).showWidget();
 }
 
 window.addEventListener('load', addDarkmodeWidget);
