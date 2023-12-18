@@ -65,6 +65,7 @@ date: 2022-06-05
 * [Veneration of Light](https://www.venerationoflight.com/)
 * [Moon Spoon](http://www.moonspoon.com/)
 * [Hammerthreads](https://hammerthreads.ca/)
+* [Shop Zoki](https://shopzoki.com/)
 
 ## Tea
 
