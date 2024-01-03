@@ -66,6 +66,7 @@ date: 2022-06-05
 * [Moon Spoon](http://www.moonspoon.com/)
 * [Hammerthreads](https://hammerthreads.ca/)
 * [Shop Zoki](https://shopzoki.com/)
+* [Velvet Apparition](https://velvetapparition.com/)
 
 ## Tea
 
