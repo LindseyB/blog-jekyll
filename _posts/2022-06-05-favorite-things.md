@@ -67,6 +67,7 @@ date: 2022-06-05
 * [Hammerthreads](https://hammerthreads.ca/)
 * [Shop Zoki](https://shopzoki.com/)
 * [Velvet Apparition](https://velvetapparition.com/)
+* [Mustard Beetle](https://mustardbeetle.com/)
 
 ## Tea
 
