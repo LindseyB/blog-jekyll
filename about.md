@@ -9,7 +9,7 @@ I'm currently a remote worker for GitHub living in the bay area and a huge fan o
 
 ## Social Media
 
-* <i class="fab fa-fw fa-twitter"></i> [@LindseyBieda](https://twitter.com/LindseyBieda)
+* 🦋 [@lindseyb.bsky.social](https://bsky.app/profile/lindseyb.bsky.social)
 * <i class="fab fa-fw fa-instagram"></i> [@LindseyBieda](https://instagram.com/LindseyBieda)
 * <i class="fab fa-fw fa-github"></i> [@LindseyB](https://github.com/LindseyB)
 * <i class="fab fa-fw fa-itch-io"></i> [LindseyBieda](https://lindseybieda.itch.io)
