@@ -9,18 +9,17 @@ I'm currently a remote worker for GitHub living in the bay area and a huge fan o
 
 ## Social Media
 
-* 🦋 [@lindseyb.bsky.social](https://bsky.app/profile/lindseyb.bsky.social)
+* <i class="fa-brands fa-bluesky"></i> [@lindseyb.bsky.social](https://bsky.app/profile/lindseyb.bsky.social)
 * <i class="fab fa-fw fa-instagram"></i> [@LindseyBieda](https://instagram.com/LindseyBieda)
 * <i class="fab fa-fw fa-github"></i> [@LindseyB](https://github.com/LindseyB)
 * <i class="fab fa-fw fa-itch-io"></i> [LindseyBieda](https://lindseybieda.itch.io)
 * <i class="fab fa-fw fa-twitch"></i> [BeEkkoDoCrimes](https://www.twitch.tv/beekkodocrimes/)
 * <i class="fab fa-fw fa-mastodon"></i><a href="https://witches.rest/@lindsey" rel="me">@lindsey@witches.rest</a>
-* 🐞 [LindseyB](https://cohost.org/lindseyb)
 
 
 ## About this site
 
-This site is generated using jekyll and utilizes the [minimal-mistakes](https://mmistakes.github.io/minimal-mistakes/) jekyll theme. Additionally, icons are provided via [Fort Awesome](https://fortawesome.com/). [PR's](https://github.com/LindseyB/blog-jekyll/) are always welcome. 
+This site is generated using jekyll and utilizes the [minimal-mistakes](https://mmistakes.github.io/minimal-mistakes/) jekyll theme. Additionally, icons are provided via [Fort Awesome](https://fortawesome.com/). [PR's](https://github.com/LindseyB/blog-jekyll/) are always welcome.
 
 ### License
 

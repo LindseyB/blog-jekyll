@@ -22,7 +22,7 @@ title: Lindsey Bieda
 name: Lindsey Bieda
 email: lindsey@rarlindseysmash.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Website for Lindsey Bieda a software engineer and hacker. 
+  Website for Lindsey Bieda a software engineer and hacker.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rarlindseysmash.com" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "LindseyB/blog-jekyll"
@@ -54,7 +54,7 @@ defaults:
 footer:
   links:
     - label: "Bluesky"
-      icon: "fab fa-fw fa-bluesky-square"
+      icon: "fa-brands fa-square-bluesky"
       url: "https://bsky.app/profile/lindseyb.bsky.social"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
