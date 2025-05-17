@@ -1,5 +1,4 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 search: false
 ---
 
@@ -59,7 +58,7 @@ $border-color: rgba(255, 255, 255, 0);
 }
 
 .grid-item {
-	width: 400px;
+	width: 300px;
 	margin-bottom: 25px;
 	max-width: 100%;
 }
