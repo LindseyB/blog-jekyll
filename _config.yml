@@ -39,8 +39,8 @@ theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
-logo: "/assets/images/android-chrome-192x192.png"
-og_image: "/assets/images/android-chrome-192x192.png"
+logo: "/assets/images/lunamoth.png"
+og_image: "/assets/images/lunamoth.png"
 
 
 defaults:
