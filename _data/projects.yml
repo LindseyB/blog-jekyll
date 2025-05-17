@@ -1,3 +1,6 @@
+- name: Moon API
+  link: https://github.com/LindseyB/moon-api
+  image: https://i.imgur.com/9ClaIx6.png
 - name: Star Wars Gifs
   link: https://github.com/LindseyB/starwars-dot-gif
   image: https://i.imgur.com/8PJevlr.gif
@@ -73,3 +76,6 @@
 - name: Kessel Run
   link: https://lindseybieda.itch.io/kessel-run
   image: https://img.itch.zone/aW1hZ2UvMjU3MDEvMTAzMDczLnBuZw==/315x250%23c/WZd4mt.png
+- name: Mood DJ
+  link: https://mood-dj-example.vercel.app
+  image: https://i.imgur.com/xtW24gW.png
