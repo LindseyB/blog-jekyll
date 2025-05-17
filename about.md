@@ -2,6 +2,7 @@
 layout: single
 title: About
 classes: wide
+author_profile: true
 ---
 
 I'm Lindsey: a staff software engineering manager with a degree in computer science who has been programming since I was 12. I love trying to mix art and code in both how I write code and coming up with new projects that find ways to blend the two. Tea is a way of life for me and reading is my one true love.
