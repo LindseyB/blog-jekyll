@@ -31,12 +31,18 @@ github_username:  lindseyb
 twitter:
   username: lindseybieda
 
+breadcrumbs: true
+enable_copy_code_button: true
+search: true
+
 # Build settings
 theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
 logo: "/assets/images/android-chrome-192x192.png"
+og_image: "/assets/images/android-chrome-192x192.png"
+
 
 defaults:
   # _posts
@@ -71,6 +77,20 @@ head_scripts:
   - https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js
 after_footer_scripts:
   - /assets/js/main.js
+
+author:
+  name     : "Lindsey B"
+  avatar   : "/assets/images/lindseyb.jpg"
+  bio      : "Lindsey is a staff software engineering manager with a passion for blending art and code, a love for tea, and a lifelong devotion to reading."
+  location : "California, USA"
+  links:
+    - label: "Bluesky"
+      icon: "fa-brands fa-square-bluesky"
+      url: "https://bsky.app/profile/lindseyb.bsky.social"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lindseyb"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
