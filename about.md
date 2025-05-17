@@ -3,7 +3,7 @@ layout: single
 title: About
 ---
 
-I'm Lindsey: a staff software engineer with a degree in computer science who has been programming since I was 12. I love trying to mix art and code in both how I write code and coming up with new projects that find ways to blend the two. Tea is a way of life for me and reading is my one true love.
+I'm Lindsey: a staff software engineering manager with a degree in computer science who has been programming since I was 12. I love trying to mix art and code in both how I write code and coming up with new projects that find ways to blend the two. Tea is a way of life for me and reading is my one true love.
 
 I'm currently a remote worker for GitHub living in the bay area and a huge fan of both pair programming and [purr programming](https://society6.com/product/purr-programmer_sticker).
 
@@ -15,7 +15,6 @@ I'm currently a remote worker for GitHub living in the bay area and a huge fan o
 * <i class="fab fa-fw fa-itch-io"></i> [LindseyBieda](https://lindseybieda.itch.io)
 * <i class="fab fa-fw fa-twitch"></i> [BeEkkoDoCrimes](https://www.twitch.tv/beekkodocrimes/)
 * <i class="fab fa-fw fa-mastodon"></i><a href="https://witches.rest/@lindsey" rel="me">@lindsey@witches.rest</a>
-
 
 ## About this site
 
