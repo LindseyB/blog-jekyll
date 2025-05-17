@@ -3,8 +3,6 @@ main:
     url: /archive
   - title: About
     url: /about
-  - title: Resume
-    url: https://lindseyb.github.io/resume/
   - title: Art
     url: https://lindseyb.github.io/fART/
   - title: GIFs
