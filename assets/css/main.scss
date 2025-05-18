@@ -109,8 +109,9 @@ body {
 }
 
 .panel {
-	border: solid 1px $border-color;
+	border: solid 2px $base02;
 	border-radius: 10px;
+	box-shadow: 6px 10px 17px -4px rgba(0,0,0,0.48);
 }
 
 .panel-body {
