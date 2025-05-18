@@ -18,8 +18,12 @@ I'm currently a remote worker for GitHub living in the bay area and a huge fan o
 * <i class="fab fa-fw fa-twitch"></i> [BeEkkoDoCrimes](https://www.twitch.tv/beekkodocrimes/)
 * <i class="fab fa-fw fa-mastodon"></i><a href="https://witches.rest/@lindsey" rel="me">@lindsey@witches.rest</a>
 
+## Music
+
+<div id="lastfm-widget"></div>
 
 [![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=n9wprvady9hfay52nxiu0a4hj&cover_image=false&theme=default&show_offline=true&background_color=121212&interchange=true&bar_color_cover=false&bar_color=d13dc0)](https://spotify-github-profile.kittinanx.com/api/view?uid=n9wprvady9hfay52nxiu0a4hj&redirect=true)
+
 
 ## About this site
 
