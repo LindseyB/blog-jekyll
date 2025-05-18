@@ -60,6 +60,7 @@ $base0d: #6272a4 !default; // purple
 $base0e: #bd93f9 !default; // pink
 $base0f: #ff79c6 !default; // magenta
 
+
 .author__urls.social-icons i,
 .author__urls.social-icons .svg-inline--fa,
 .page__footer-follow .social-icons i,
@@ -76,6 +77,12 @@ $base0f: #ff79c6 !default; // magenta
   &:visited {
     color: $text-color;
   }
+
+	&:hover {
+		color: $text-color !important;
+		background-color: $link-color-visited !important;
+		border-color: transparent;
+	}
 }
 
 .ais-search-box .ais-search-box--input {
