@@ -54,6 +54,11 @@ $base0d: #6272a4 !default; // purple
 $base0e: #bd93f9 !default; // pink
 $base0f: #ff79c6 !default; // magenta
 
+.highlighter-rouge {
+	border: solid 1px $border-color;
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+}
+
 
 .author__urls.social-icons i,
 .author__urls.social-icons .svg-inline--fa,
