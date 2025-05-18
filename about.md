@@ -11,12 +11,14 @@ I'm currently a remote worker for GitHub living in the bay area and a huge fan o
 
 ## Social Media
 
-* <i class="fa-brands fa-bluesky"></i> [@lindseyb.bsky.social](https://bsky.app/profile/lindseyb.bsky.social)
-* <i class="fab fa-fw fa-instagram"></i> [@LindseyBieda](https://instagram.com/LindseyBieda)
-* <i class="fab fa-fw fa-github"></i> [@LindseyB](https://github.com/LindseyB)
-* <i class="fab fa-fw fa-itch-io"></i> [LindseyBieda](https://lindseybieda.itch.io)
-* <i class="fab fa-fw fa-twitch"></i> [BeEkkoDoCrimes](https://www.twitch.tv/beekkodocrimes/)
-* <i class="fab fa-fw fa-mastodon"></i><a href="https://witches.rest/@lindsey" rel="me">@lindsey@witches.rest</a>
+<ul style="list-style-type: none">
+  <li><i class="fa-brands fa-bluesky"></i> <a href="https://bsky.app/profile/lindseyb.bsky.social">@lindseyb.bsky.social</a></li>
+  <li><i class="fab fa-fw fa-instagram"></i> <a href="https://instagram.com/LindseyBieda">@LindseyBieda</a></li>
+  <li><i class="fab fa-fw fa-github"></i> <a href="https://github.com/LindseyB">@LindseyB</a></li>
+  <li><i class="fab fa-fw fa-itch-io"></i> <a href="https://lindseybieda.itch.io">LindseyBieda</a></li>
+  <li><i class="fab fa-fw fa-twitch"></i> <a href="https://www.twitch.tv/beekkodocrimes/">BeEkkoDoCrimes</a></li>
+  <li><i class="fab fa-fw fa-mastodon"></i> <a href="https://witches.rest/@lindsey" rel="me">@lindsey@witches.rest</a></li>
+</ul>
 
 ## Music
 
