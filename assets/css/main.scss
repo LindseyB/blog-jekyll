@@ -4,16 +4,13 @@ search: false
 
 @charset "utf-8";
 
-//$link-color: #6272a4;
 
-$serif              : 'Fira Mono', sans-serif;
-$sans-serif-narrow  : 'Playfair Display', serif;
 
-$global-font-family : $serif;
-$header-font-family : $sans-serif-narrow;
+$fira-mono: 'Fira Mono', monospace;
+$raleway  : 'Raleway', sans-serif;
 
-//$border-color: rgba(255, 255, 255, 0);
-
+$global-font-family : $fira-mono;
+$header-font-family : $raleway;
 
 /* ==========================================================================
    Dracula Theme
