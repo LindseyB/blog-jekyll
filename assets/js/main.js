@@ -15,8 +15,8 @@ function addMoonAPIWidget() {
   btn.innerText = '🌓'; // Moon Icon
   btn.title = 'Check the Moon Phase';
   btn.style.position = 'fixed';
-  btn.style.bottom = '80px';
-  btn.style.right = '80px';
+  btn.style.bottom = '10px';
+  btn.style.right = '10px';
   btn.style.zIndex = '9999';
   btn.style.background = '#ffffff';
   btn.style.color = '#f8f8f2';
