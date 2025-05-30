@@ -40,9 +40,9 @@ We end up with a tight relay of both information, eyes, and knowledge that allow
 
 1. **Everything has to be in writing somewhere**
 
-    Have a sync meeting? Take diligent notes, or better yet record it **and **take diligent notes. Have a quick video chat to make a decision? It better be persisted somewhere in writing that other people can reference to understand what happened. Basically, if it’s not written down it didn’t happen. 
+    Have a sync meeting? Take diligent notes, or better yet record it **and** take diligent notes. Have a quick video chat to make a decision? It better be persisted somewhere in writing that other people can reference to understand what happened. Basically, if it’s not written down it didn’t happen. 
 
-2. **Minimize as many synchronous processes as possible **
+2. **Minimize as many synchronous processes as possible**
 
     I use geekbot for standups, because it’s automated and async and folks can set it up to notify them at their time of choice in their timezone. Similarly, I suggest doing this for as many things as possible. It’s going to feel hard and odd at first, but it’s really important to get used to this and rely on these tools since it’s absolutely worth the benefits. 
 
