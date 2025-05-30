@@ -17,7 +17,7 @@ Our engineering team consists of 16 members. The majority are based in North Ame
 
 2. **Long running tasks can be passed between multiple individuals**
 
-    Long running tasks or bugs can be picked up and passed between individuals in different timezones. Recently, we had a bug that was discovered by someone working in Hawaii who handed it off to someone in Australia at the end of their day who handed it off to someone in the east coast of the US at the end of their day who handed it back to the original person in Hawaii when they were back online. Now, all of these people have the shared knowledge of this bug, and we have work that was done during all of these hours that otherwise would have just been paused until the individual came online the next day. 
+    Long running tasks or bugs can be picked up and passed between individuals in different timezones. Recently, we had a bug that was discovered by someone working in Hawaii who handed it off to someone in Australia who handed it off to someone in Singapore who then at the end of their day who handed it off to someone in the east coast of the US at the end of their day who handed it back to the original person in Hawaii when they were back online. Now, all of these people have the shared knowledge of this bug, and we have work that was done during all of these hours that otherwise would have just been paused until the individual came online the next day. 
 
 
     Or, worse case scenario, someone could have exhausted themselves working on the bug all alone not sharing any context without any knowledge sharing or additional eyes to ensure the right solution was found.  \
