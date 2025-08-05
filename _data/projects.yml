@@ -1,6 +1,9 @@
 - name: Moon API
   link: https://github.com/LindseyB/moon-api
   image: https://i.imgur.com/9ClaIx6.png
+- name: Astro Horoscope
+  link: https://astro-horoscope.lol
+  images: https://i.imgur.com/osZHN7K.png
 - name: Star Wars Gifs
   link: https://github.com/LindseyB/starwars-dot-gif
   image: https://i.imgur.com/8PJevlr.gif
