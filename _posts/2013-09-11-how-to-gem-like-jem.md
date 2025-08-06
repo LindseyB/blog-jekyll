@@ -6,23 +6,23 @@ I've been looking around for a super quick start guide to first gem using bundle
 
 First things first if you don't have bundler install it.
 
-```
+```bash
 $ gem install bundler
 ```
 
 Bundler is super awesome and will let us run a single command to generate the directory and all of the files we will need for creating our gem with the following command:
 
-```
+```bash
 $ bundle gem [gemname]
 ```
 
-I called my gem: Jem. 
+I called my gem: Jem.
 
 ![Jem](https://i.imgur.com/7Iyh1JW.gif)
 
-The next thing you want to do is peek into the generated  **[gemname].gemspec** that was created when you generated your gem. You probably want to modify the description, summary, and homepage. 
+The next thing you want to do is peek into the generated  **[gemname].gemspec** that was created when you generated your gem. You probably want to modify the description, summary, and homepage.
 
-```
+```ruby
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
@@ -46,47 +46,47 @@ end
 
 ## Dependencies
 
-This file also notes what the dependencies for the gem is. [RubyGems Guides: Declaring Dependencies](http://guides.rubygems.org/patterns/#declaring_dependencies) will give you more detail into what these mean, but the gist is you want to specify runtime dependencies with ```add_dependency```. These dependencies are anything that your code needs to run. Meanwhile, for gem development purposes you would specify those dependencies with ```add_development_dependency```. 
+This file also notes what the dependencies for the gem is. [RubyGems Guides: Declaring Dependencies](http://guides.rubygems.org/patterns/#declaring_dependencies) will give you more detail into what these mean, but the gist is you want to specify runtime dependencies with ```add_dependency```. These dependencies are anything that your code needs to run. Meanwhile, for gem development purposes you would specify those dependencies with ```add_development_dependency```.
 
-**PRO-TIP**: ```add_dependency``` is just an alias for ```add_runtime_dependency``` 
+**PRO-TIP**: ```add_dependency``` is just an alias for ```add_runtime_dependency```
 
-```
+```ruby
 spec.add_dependency "rails"
 spec.add_development_dependency "pry"
 ```
 
 ## Actual Gem Code
 
-If your gem is super simple you can probably just dump all you code inside of the ```lib/[gemname].rb``` file. However, if you wanted multiple classes you would put those inside of the folder named for your gem inside the ```lib``` folder (e.g. ```lib/jem/```) and then make sure to require them from inside your ```lib/[gemname].rb``` file. 
+If your gem is super simple you can probably just dump all you code inside of the ```lib/[gemname].rb``` file. However, if you wanted multiple classes you would put those inside of the folder named for your gem inside the ```lib``` folder (e.g. ```lib/jem/```) and then make sure to require them from inside your ```lib/[gemname].rb``` file.
 
 If I have the file ```lib/jem/the_holograms.rb``` then my ```lib/jem.rb``` file would look something like:
 
-```
+```ruby
 require 'jem/version'
 require 'jem/the_holograms'
 ```
 
 ```lib/jem/the_holograms.rb``` should look something kind of like this, depending on what you are doing, but the key thing to notice is the ```module``` line:
 
-```
+```ruby
 module Jem
   SONG = "Truly, Truly, Truly Outrageous"
 end
 ```
 
-Note: that ```require 'jem/version'``` is just requiring a file that's setting the version constant. See the first place we are using that constant? Right in the **.gemspec** file: ```gem.version       = Jem::VERSION```. 
+Note: that ```require 'jem/version'``` is just requiring a file that's setting the version constant. See the first place we are using that constant? Right in the **.gemspec** file: ```gem.version       = Jem::VERSION```.
 
-Once you've gotten your gem where you want it you should commit your code and move on the playing with it locally. 
+Once you've gotten your gem where you want it you should commit your code and move on the playing with it locally.
 
 ## Using the Gem Locally
 
-If you want to test out your gem locally the easiest way to is create a new ruby (or rails) project and specify your gem inside the **Gemfile** like so: 
+If you want to test out your gem locally the easiest way to is create a new ruby (or rails) project and specify your gem inside the **Gemfile** like so:
 
-```
+```ruby
 gem 'gem', :path => "/path/to/jem"
 ```
 
-Then ```bundle``` to install the gem. 
+Then ```bundle``` to install the gem.
 
 ## Going Further
 - [Setting up easy to configure gems](http://robots.thoughtbot.com/post/344833329/mygem-configure-block)
