@@ -346,6 +346,7 @@ code {
   border-radius: 4px;
   color: var(--color-accent-purple);
   font-weight: 500;
+  text-shadow: none; /* Remove any text shadow for better readability */
 }
 
 pre {
@@ -358,6 +359,7 @@ pre {
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-sm);
   position: relative;
+  text-shadow: none; /* Remove any text shadow for better readability */
 }
 
 pre code {
@@ -764,5 +766,242 @@ pre:hover .prism-toolbar {
 
   .post-content {
     font-size: 1rem;
+  }
+}
+
+/* ==========================================================================
+   Rouge Syntax Highlighting
+   ========================================================================== */
+
+/* Light Mode Syntax Highlighting */
+[data-theme="light"] {
+  .highlight {
+    background: var(--color-bg-code);
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+  }
+
+  .highlight pre {
+    margin: 0;
+    padding: 1rem;
+    overflow-x: auto;
+    background: transparent;
+    color: var(--color-text);
+    text-shadow: none; /* Remove any text shadow for better readability */
+  }
+
+  .highlight code {
+    background: transparent;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    text-shadow: none; /* Remove any text shadow for better readability */
+  }
+
+  /* Rouge Syntax Tokens - Light Mode */
+  .highlight .c,    /* Comment */
+  .highlight .cd,   /* Comment.Doc */
+  .highlight .cm,   /* Comment.Multiline */
+  .highlight .c1,   /* Comment.Single */
+  .highlight .cs {  /* Comment.Special */
+    color: #6a737d;
+    font-style: italic;
+  }
+
+  .highlight .k,    /* Keyword */
+  .highlight .kc,   /* Keyword.Constant */
+  .highlight .kd,   /* Keyword.Declaration */
+  .highlight .kn,   /* Keyword.Namespace */
+  .highlight .kp,   /* Keyword.Pseudo */
+  .highlight .kr,   /* Keyword.Reserved */
+  .highlight .kt {  /* Keyword.Type */
+    color: #d73a49;
+    font-weight: 600;
+  }
+
+  .highlight .s,    /* String */
+  .highlight .sa,   /* String.Affix */
+  .highlight .sb,   /* String.Backtick */
+  .highlight .sc,   /* String.Char */
+  .highlight .dl,   /* String.Delimiter */
+  .highlight .sd,   /* String.Doc */
+  .highlight .s2,   /* String.Double */
+  .highlight .se,   /* String.Escape */
+  .highlight .sh,   /* String.Heredoc */
+  .highlight .si,   /* String.Interpol */
+  .highlight .sx,   /* String.Other */
+  .highlight .sr,   /* String.Regex */
+  .highlight .s1,   /* String.Single */
+  .highlight .ss {  /* String.Symbol */
+    color: #032f62;
+  }
+
+  .highlight .m,    /* Number */
+  .highlight .mb,   /* Number.Bin */
+  .highlight .mf,   /* Number.Float */
+  .highlight .mh,   /* Number.Hex */
+  .highlight .mi,   /* Number.Integer */
+  .highlight .il,   /* Number.Integer.Long */
+  .highlight .mo {  /* Number.Oct */
+    color: #005cc5;
+  }
+
+  .highlight .n,    /* Name */
+  .highlight .na,   /* Name.Attribute */
+  .highlight .nb,   /* Name.Builtin */
+  .highlight .nc,   /* Name.Class */
+  .highlight .no,   /* Name.Constant */
+  .highlight .nd,   /* Name.Decorator */
+  .highlight .ni,   /* Name.Entity */
+  .highlight .ne,   /* Name.Exception */
+  .highlight .nf,   /* Name.Function */
+  .highlight .nl,   /* Name.Label */
+  .highlight .nn,   /* Name.Namespace */
+  .highlight .nx,   /* Name.Other */
+  .highlight .py,   /* Name.Property */
+  .highlight .nt,   /* Name.Tag */
+  .highlight .nv,   /* Name.Variable */
+  .highlight .vc,   /* Name.Variable.Class */
+  .highlight .vg,   /* Name.Variable.Global */
+  .highlight .vi {  /* Name.Variable.Instance */
+    color: var(--color-text);
+  }
+
+  .highlight .nf,   /* Name.Function */
+  .highlight .nc {  /* Name.Class */
+    color: #6f42c1;
+    font-weight: 600;
+  }
+
+  .highlight .o,    /* Operator */
+  .highlight .ow {  /* Operator.Word */
+    color: #d73a49;
+  }
+
+  .highlight .p {   /* Punctuation */
+    color: var(--color-text);
+  }
+}
+
+/* Dark Mode Syntax Highlighting */
+[data-theme="dark"] {
+  .highlight {
+    background: #1e2327;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    box-shadow: none; /* Remove shadow for better readability in dark mode */
+  }
+
+  .highlight pre {
+    margin: 0;
+    padding: 1rem;
+    overflow-x: auto;
+    background: transparent;
+    color: #e6e6e6;
+    text-shadow: none; /* Remove any text shadow for better readability */
+  }
+
+  .highlight code {
+    background: transparent;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    color: inherit;
+    text-shadow: none; /* Remove any text shadow for better readability */
+  }
+
+  /* Rouge Syntax Tokens - Dark Mode */
+  .highlight .c,    /* Comment */
+  .highlight .cd,   /* Comment.Doc */
+  .highlight .cm,   /* Comment.Multiline */
+  .highlight .c1,   /* Comment.Single */
+  .highlight .cs {  /* Comment.Special */
+    color: #7c7c7c;
+    font-style: italic;
+  }
+
+  .highlight .k,    /* Keyword */
+  .highlight .kc,   /* Keyword.Constant */
+  .highlight .kd,   /* Keyword.Declaration */
+  .highlight .kn,   /* Keyword.Namespace */
+  .highlight .kp,   /* Keyword.Pseudo */
+  .highlight .kr,   /* Keyword.Reserved */
+  .highlight .kt {  /* Keyword.Type */
+    color: #ff7b72;
+    font-weight: 600;
+  }
+
+  .highlight .s,    /* String */
+  .highlight .sa,   /* String.Affix */
+  .highlight .sb,   /* String.Backtick */
+  .highlight .sc,   /* String.Char */
+  .highlight .dl,   /* String.Delimiter */
+  .highlight .sd,   /* String.Doc */
+  .highlight .s2,   /* String.Double */
+  .highlight .se,   /* String.Escape */
+  .highlight .sh,   /* String.Heredoc */
+  .highlight .si,   /* String.Interpol */
+  .highlight .sx,   /* String.Other */
+  .highlight .sr,   /* String.Regex */
+  .highlight .s1,   /* String.Single */
+  .highlight .ss {  /* String.Symbol */
+    color: #a5d6ff;
+  }
+
+  .highlight .m,    /* Number */
+  .highlight .mb,   /* Number.Bin */
+  .highlight .mf,   /* Number.Float */
+  .highlight .mh,   /* Number.Hex */
+  .highlight .mi,   /* Number.Integer */
+  .highlight .il,   /* Number.Integer.Long */
+  .highlight .mo {  /* Number.Oct */
+    color: #79c0ff;
+  }
+
+  .highlight .n,    /* Name */
+  .highlight .na,   /* Name.Attribute */
+  .highlight .nb,   /* Name.Builtin */
+  .highlight .nc,   /* Name.Class */
+  .highlight .no,   /* Name.Constant */
+  .highlight .nd,   /* Name.Decorator */
+  .highlight .ni,   /* Name.Entity */
+  .highlight .ne,   /* Name.Exception */
+  .highlight .nf,   /* Name.Function */
+  .highlight .nl,   /* Name.Label */
+  .highlight .nn,   /* Name.Namespace */
+  .highlight .nx,   /* Name.Other */
+  .highlight .py,   /* Name.Property */
+  .highlight .nt,   /* Name.Tag */
+  .highlight .nv,   /* Name.Variable */
+  .highlight .vc,   /* Name.Variable.Class */
+  .highlight .vg,   /* Name.Variable.Global */
+  .highlight .vi {  /* Name.Variable.Instance */
+    color: #e6e6e6;
+  }
+
+  .highlight .nf,   /* Name.Function */
+  .highlight .nc {  /* Name.Class */
+    color: #d2a8ff;
+    font-weight: 600;
+  }
+
+  .highlight .o,    /* Operator */
+  .highlight .ow {  /* Operator.Word */
+    color: #ff7b72;
+  }
+
+  .highlight .p {   /* Punctuation */
+    color: #e6e6e6;
+  }
+
+  /* Shell/Bash specific highlighting */
+  .highlight .nv {  /* Shell variables */
+    color: #ffa657;
+  }
+
+  .highlight .nb {  /* Shell builtins */
+    color: #79c0ff;
   }
 }
