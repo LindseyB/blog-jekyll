@@ -35,7 +35,6 @@ enable_copy_code_button: true
 search: true
 
 # Build settings
-theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
@@ -49,7 +48,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: post
       read_time: true
       comments: false
       share: true

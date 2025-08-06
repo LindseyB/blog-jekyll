@@ -3,24 +3,68 @@ permalink: /404.html
 layout: default
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-  <img src="https://media0.giphy.com/media/T9HgfTv4di5Ne/giphy.gif" alt="R2D2 from star wars with the subtitles 'sad beep' so we can infer the sound that they are making">
+<div class="error-page">
+  <div class="error-content">
+    <h1>404</h1>
+    <h2>Page Not Found</h2>
+    <p>The page you're looking for seems to have fluttered away like a luna moth in the night.</p>
+    <a href="{{ '/' | relative_url }}" class="cta-button">Return Home</a>
+  </div>
 </div>
+
+<style>
+.error-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.error-content h1 {
+  font-size: 6rem;
+  margin: 0;
+  color: var(--color-accent-primary);
+  font-family: var(--font-display);
+  background: var(--luna-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.error-content h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: var(--color-text-primary);
+}
+
+.error-content p {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  margin: 2rem 0;
+  max-width: 500px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--luna-gradient);
+  color: var(--color-text-inverse);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  color: var(--color-text-inverse);
+  text-decoration: none;
+}
+</style>

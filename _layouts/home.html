@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+<!-- Luna Moth Hero Section -->
+<section class="luna-hero">
+  <div class="luna-hero-content">
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+    <a href="{{ '/archive' | relative_url }}" class="cta-button">Explore Writing</a>
+  </div>
+</section>
+
+<!-- Recent Posts -->
+<section class="recent-posts">
+  <h2>Recent Posts</h2>
+
+  {% if site.posts.size > 0 %}
+  <div class="post-list">
+    {% for post in site.posts limit:6 %}
+    <article class="post-card">
+      <header class="post-header">
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <div class="post-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+        </div>
+      </header>
+
+      {% if post.excerpt %}
+      <div class="post-excerpt">
+        {{ post.excerpt | strip_html | truncatewords: 30 }}
+      </div>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </div>
+
+  <div style="text-align: center; margin-top: 3rem;">
+    <a href="{{ '/archive' | relative_url }}" class="cta-button">View All Posts</a>
+  </div>
+  {% else %}
+  <p>No posts yet.</p>
+  {% endif %}
+</section>
+
+<style>
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--luna-gradient);
+  color: var(--color-text-inverse);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  color: var(--color-text-inverse);
+  text-decoration: none;
+}
+
+.recent-posts h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--color-accent-primary);
+}
+</style>
