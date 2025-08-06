@@ -31,7 +31,7 @@ function addLastFmWidgetToDiv(divSelector, username, apiKey) {
           li.style.marginBottom = '4px';
           var trackName = track.name || 'Unknown';
           var artistName = (track.artist && track.artist['#text']) || 'Unknown';
-          li.innerHTML = `<span style="font-weight:500; color:#ffb86c">${trackName}</span> <span style="color:#f1fa8c">by</span> <span style="color:#ff79c6">${artistName}</span>`;
+          li.innerHTML = `<b>${trackName}</b> by <i>${artistName}</i>`;
           list.appendChild(li);
         });
       } else {
