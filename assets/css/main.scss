@@ -482,6 +482,11 @@ pre:hover .prism-toolbar {
   box-shadow: var(--shadow-sm);
 }
 
+div.highlight {
+  margin: auto;
+  margin-bottom: 1em;
+}
+
 .highlight pre {
   margin: 0;
   border: none;

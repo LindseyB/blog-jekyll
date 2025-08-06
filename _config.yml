@@ -26,10 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rarlindseysmash.com" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "LindseyB/blog-jekyll"
-twitter_username: lindseybieda
 github_username:  lindseyb
-twitter:
-  username: lindseybieda
 
 enable_copy_code_button: true
 search: true
@@ -51,10 +48,10 @@ defaults:
       layout: post
       read_time: true
       comments: false
-      share: true
-      related: true
+      share: false
+      related: false
       classes: wide
-      author_profile: true
+      author_profile: false
 
 footer:
   links:
@@ -70,24 +67,6 @@ footer:
     - label: "Mastodon"
       icon: "fab fa-fw fa-mastodon"
       url: "https://witches.rest/@lindsey"
-
-head_scripts:
-  - https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js
-after_footer_scripts:
-  - /assets/js/main.js
-
-author:
-  name     : "Lindsey B"
-  avatar   : "/assets/images/lindseyb.jpg"
-  bio      : "Lindsey is a staff software engineering manager with a passion for blending art and code, a love for tea, and a lifelong devotion to reading."
-  location : "California, USA"
-  links:
-    - label: "Bluesky"
-      icon: "fa-brands fa-square-bluesky"
-      url: "https://bsky.app/profile/lindseyb.bsky.social"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/lindseyb"
 
 
 # Exclude from processing.

@@ -13,17 +13,17 @@ I also encountered some difficulty likely caused by my own misunderstanding of h
 
 I had the following:
 
-```
+```javascript
 this.crew_statuses = [];
 for(var i=0; i < crew.length; i++) {
 	this.crew_statuses.push(...));
 }
 ```
 
-and then I was trying to update and draw each item iterating over that array. However, in Phaser the ideal method is to use a group and so with just my simple array it would update and draw with the updated data once, but never again. A quick change to the above code fixes it all up: 
+and then I was trying to update and draw each item iterating over that array. However, in Phaser the ideal method is to use a group and so with just my simple array it would update and draw with the updated data once, but never again. A quick change to the above code fixes it all up:
 
 
-```
+```javascript
 this.crew_statuses = game.add.group();
 for(var i=0; i < crew.length; i++) {
 	this.crew_statuses.add(...);

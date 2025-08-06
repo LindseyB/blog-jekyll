@@ -3,7 +3,7 @@ title: My LED Heart
 date: 2015-02-28
 ---
 
-I recently took my first dive into soldering with Adafruit's [MiniPOV 3 Kit](http://www.adafruit.com/product/20). To my surprise I got it working and also didn't burn myself in the process. 
+I recently took my first dive into soldering with Adafruit's [MiniPOV 3 Kit](http://www.adafruit.com/product/20). To my surprise I got it working and also didn't burn myself in the process.
 
 ![Device just after soldering](https://i.imgur.com/dQDNhAg.gif)
 
@@ -13,11 +13,11 @@ I decided I wanted to be able to quickly draw something in a BMP and generate a 
 
 ![Source BMP](https://i.imgur.com/VEngO1X.png)
 
-Using some of the example code provided by Adafruit I began to write some ruby code to generate the C file (which in turn would generate a hex file to actually flash the device with). I thought the hard part was going to be reading in the BMP pixel by pixel because I didn't want to require rmagick or imagemagick as a dependency (because both libraries are a pain for something so simple). Luckily, [Practicing Ruby](https://practicingruby.com/articles/binary-file-formats) has a really awesome article that goes through code to read a BMP. 
+Using some of the example code provided by Adafruit I began to write some ruby code to generate the C file (which in turn would generate a hex file to actually flash the device with). I thought the hard part was going to be reading in the BMP pixel by pixel because I didn't want to require rmagick or imagemagick as a dependency (because both libraries are a pain for something so simple). Luckily, [Practicing Ruby](https://practicingruby.com/articles/binary-file-formats) has a really awesome article that goes through code to read a BMP.
 
-In the end the code itself is extremely simple. I read in the BMP and generate lines of the C file based on what I read in from the image. I assume the image is 8 pixels in height and N pixels in length. Though, technically it would be smart to verify which dimension is 8 pixels and adapt accordingly or throw and error if that isn't the case. 
+In the end the code itself is extremely simple. I read in the BMP and generate lines of the C file based on what I read in from the image. I assume the image is 8 pixels in height and N pixels in length. Though, technically it would be smart to verify which dimension is 8 pixels and adapt accordingly or throw and error if that isn't the case.
 
-```
+```ruby
 require './BMP.rb'
 
 bmp = BMP.new("heart.bmp")
@@ -50,16 +50,16 @@ You can see the results of this code below and you can view all of the code in t
 
 ### Update
 
-A bit later I got the newer POV kit and soldered it up and started playing around with the idea of hooking a POV device up to a hula hoop. 
+A bit later I got the newer POV kit and soldered it up and started playing around with the idea of hooking a POV device up to a hula hoop.
 
-This initial results were okay, but I needed to tweak the timing and get rid of some of the empty space. 
+This initial results were okay, but I needed to tweak the timing and get rid of some of the empty space.
 
 <blockquote class="twitter-video" lang="en"><p>POV + hula hoop = <a href="http://t.co/cxKNw8pYvp">pic.twitter.com/cxKNw8pYvp</a></p>&mdash; Lindsey Bieda (@lindseybieda) <a href="https://twitter.com/lindseybieda/status/574372828390125568">March 8, 2015</a></blockquote>
 <p class="image">
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </p>
 
-I later connected both devices to the hula hoop to deal with some balance issues and to add something more interesting than a lot of dead space between rotations. The result is fairly amusing, but it just stirs up my desire to make a hula hoop with a lot of individually addressable LEDs. 
+I later connected both devices to the hula hoop to deal with some balance issues and to add something more interesting than a lot of dead space between rotations. The result is fairly amusing, but it just stirs up my desire to make a hula hoop with a lot of individually addressable LEDs.
 
 <blockquote class="twitter-video" lang="en"><p>How do you counteract the weight of one device? Add another! Hearts and stars POV hula hoop :) <a href="http://t.co/7V0S7clFXd">pic.twitter.com/7V0S7clFXd</a></p>&mdash; Lindsey Bieda (@lindseybieda) <a href="https://twitter.com/lindseybieda/status/576211437535678464">March 13, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
