@@ -1,28 +1,110 @@
 ---
-layout: default
+layout: page
+title: Links
 ---
 
-<a class="button" href="https://lindseyb.github.io/resume/" target="_blank">
-  Resume
-</a>
-<a class="button" href="https://rarlindseysmash.com/">
-  Personal Website
-</a>
-<a class="button" href="https://github.com/LindseyB" target="_blank">
-  GitHub
-</a>
-<a class="button" href="https://bsky.app/profile/lindseyb.bsky.social" target="_blank">
-  Bluesky
-</a>
-<a class="button" href="https://www.instagram.com/LindseyBieda/" target="_blank">
-  Instagram
-</a>
-<a class="button" href="https://www.twitch.tv/beekkodocrimes/" target="_blank">
-  Twitch
-</a>
-<a class="button" href="https://lindseybieda.itch.io/" target="_blank">
-  Itch.io
-</a>
-<a rel="me" class="button" href="https://witches.rest/@lindsey" target="_blank">
-  Mastodon
-</a>
+<div class="links-grid">
+  <a class="link-card" href="https://lindseyb.github.io/resume/" target="_blank">
+    <div class="link-content">
+      <h3>Resume</h3>
+      <p>My professional experience and skills</p>
+    </div>
+  </a>
+
+  <a class="link-card" href="https://rarlindseysmash.com/">
+    <div class="link-content">
+      <h3>Personal Website</h3>
+      <p>My main portfolio and creative work</p>
+    </div>
+  </a>
+
+  <a class="link-card" href="https://github.com/LindseyB" target="_blank">
+    <div class="link-content">
+      <h3>GitHub</h3>
+      <p>Code repositories and open source projects</p>
+    </div>
+  </a>
+
+  <a class="link-card" href="https://bsky.app/profile/lindseyb.bsky.social" target="_blank">
+    <div class="link-content">
+      <h3>Bluesky</h3>
+      <p>Social posts and quick thoughts</p>
+    </div>
+  </a>
+
+  <a class="link-card" href="https://www.instagram.com/LindseyBieda/" target="_blank">
+    <div class="link-content">
+      <h3>Instagram</h3>
+      <p>Photography and visual content</p>
+    </div>
+  </a>
+
+  <a class="link-card" href="https://www.twitch.tv/beekkodocrimes/" target="_blank">
+    <div class="link-content">
+      <h3>Twitch</h3>
+      <p>Live coding and creative streams</p>
+    </div>
+  </a>
+
+  <a class="link-card" href="https://lindseybieda.itch.io/" target="_blank">
+    <div class="link-content">
+      <h3>Itch.io</h3>
+      <p>Games and interactive projects</p>
+    </div>
+  </a>
+
+  <a class="link-card" href="https://witches.rest/@lindsey" target="_blank" rel="me">
+    <div class="link-content">
+      <h3>Mastodon</h3>
+      <p>Decentralized social networking</p>
+    </div>
+  </a>
+</div>
+
+<style>
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.link-card {
+  background: var(--color-bg-secondary);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  display: block;
+  box-shadow: var(--shadow-sm);
+}
+
+.link-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-accent-primary);
+  box-shadow: var(--shadow-md);
+  text-decoration: none;
+  color: inherit;
+}
+
+.link-content h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--color-accent-primary);
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+}
+
+.link-content p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .links-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
