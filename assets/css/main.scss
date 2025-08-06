@@ -108,7 +108,7 @@ body {
 /* Theme Toggle */
 .theme-toggle {
   position: fixed;
-  top: 20px;
+  bottom: 20px;
   right: 20px;
   z-index: 1000;
   background: var(--luna-gradient);
@@ -948,7 +948,7 @@ pre:hover .copy-code-button {
   }
 
   .theme-toggle {
-    top: 15px;
+    bottom: 15px;
     right: 15px;
     width: 45px;
     height: 45px;
