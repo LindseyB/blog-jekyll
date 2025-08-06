@@ -630,12 +630,15 @@ pre:hover .copy-code-button {
   position: relative;
   overflow: hidden;
   height: 200px;
+  width: 100%;
 }
 
 .project-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  display: block;
   transition: transform 0.3s ease;
 }
 
