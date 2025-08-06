@@ -63,10 +63,10 @@
         <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
 
         <ul class="nav-links">
-          <li><a href="{{ '/' | relative_url }}" class="nav-link">Home</a></li>
           <li><a href="{{ '/projects' | relative_url }}" class="nav-link">Projects</a></li>
           <li><a href="{{ '/archive' | relative_url }}" class="nav-link">Archive</a></li>
           <li><a href="{{ '/about' | relative_url }}" class="nav-link">About</a></li>
+          <li><a href="https://lindseyb.github.io/fART/" class="nav-link" target="_blank" rel="noopener noreferrer">Art</a></li>
           <li><a href="https://lindseyb.github.io/resume/" class="nav-link" target="_blank" rel="noopener noreferrer">Resume</a></li>
         </ul>
       </nav>
@@ -137,5 +137,8 @@
       });
     });
   </script>
+  
+  <!-- Main JavaScript -->
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>
