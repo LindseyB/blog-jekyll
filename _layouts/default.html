@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,9 +43,10 @@
   <!-- Theme Detection Script - Must run early to prevent flash -->
   <script>
     // Detect user's system preference and saved preference
+    // Default to dark mode if no preference is set
     const savedTheme = localStorage.getItem('theme');
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+    const theme = savedTheme || (systemPrefersDark ? 'dark' : 'dark'); // Default to dark mode
     document.documentElement.setAttribute('data-theme', theme);
   </script>
 </head>

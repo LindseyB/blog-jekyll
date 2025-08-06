@@ -27,7 +27,7 @@ I'm currently a remote worker for GitHub living in the bay area and a huge fan o
 
 ## About this site
 
-This site is generated using jekyll and utilizes the [minimal-mistakes](https://mmistakes.github.io/minimal-mistakes/) jekyll theme. Additionally, icons are provided via [Fort Awesome](https://fortawesome.com/). [PR's](https://github.com/LindseyB/blog-jekyll/) are always welcome.
+This site is generated using jekyll using a custom theme. Additionally, icons are provided via [Fort Awesome](https://fortawesome.com/). [PR's](https://github.com/LindseyB/blog-jekyll/) are always welcome.
 
 ### License
 
