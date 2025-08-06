@@ -357,6 +357,7 @@ pre {
   margin: 1.5rem 0;
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-sm);
+  position: relative;
 }
 
 pre code {
@@ -366,7 +367,112 @@ pre code {
   color: var(--color-text-primary);
 }
 
-/* Syntax Highlighting - Refined Luna Moth Theme */
+/* Prism.js Integration with Luna Moth Theme */
+pre[class*="language-"] {
+  background: var(--color-bg-code);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: var(--color-text-primary);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Prism Toolbar Styling */
+.prism-toolbar {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+pre:hover .prism-toolbar {
+  opacity: 1;
+}
+
+.prism-toolbar .toolbar-item button {
+  background: var(--luna-gradient);
+  color: var(--color-text-inverse);
+  border: none;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.prism-toolbar .toolbar-item button:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Override Prism's default colors with Luna Moth theme */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: var(--color-text-primary);
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: var(--color-accent-secondary);
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: var(--color-accent-primary);
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: var(--color-accent-purple-light);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: var(--color-accent-purple);
+  font-weight: 600;
+}
+
+.token.function,
+.token.class-name {
+  color: var(--color-accent-primary);
+  font-weight: 500;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: var(--color-accent-secondary);
+}
+
+/* Syntax Highlighting - Refined Luna Moth Theme (Fallback for Rouge) */
 .highlight {
   background: var(--color-bg-code);
   border-radius: var(--border-radius);
