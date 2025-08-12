@@ -231,5 +231,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Initialize Last.fm widget on page load
 window.addEventListener('load', function() {
-  addLastFmWidgetToDiv('#lastfm-widget', 'BeEkkoDoCrimes', '421d1d180d48e1c30fcb3ec771bba221'); // please don't abuse my API key
+  addLastFmWidgetToDiv('#lastfm-widget', 'f0xglove', '421d1d180d48e1c30fcb3ec771bba221'); // please don't abuse my API key
 });
