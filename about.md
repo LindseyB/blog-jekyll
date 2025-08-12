@@ -14,8 +14,9 @@ I'm currently a remote worker for GitHub living in the bay area and a huge fan o
   <li><i class="fab fa-fw fa-instagram"></i> <a href="https://instagram.com/LindseyBieda">@LindseyBieda</a></li>
   <li><i class="fab fa-fw fa-github"></i> <a href="https://github.com/LindseyB">@LindseyB</a></li>
   <li><i class="fab fa-fw fa-itch-io"></i> <a href="https://lindseybieda.itch.io">LindseyBieda</a></li>
-  <li><i class="fab fa-fw fa-twitch"></i> <a href="https://www.twitch.tv/beekkodocrimes/">BeEkkoDoCrimes</a></li>
+  <li><i class="fab fa-fw fa-twitch"></i> <a href="https://www.twitch.tv/f0xg10v3/">f0xg10v3</a></li>
   <li><i class="fab fa-fw fa-mastodon"></i> <a href="https://witches.rest/@lindsey" rel="me">@lindsey@witches.rest</a></li>
+  <li><i class="fab fa-fw fa-lastfm"></i><a href="https://www.last.fm/user/f0xglove">f0xglove</a></li>
 </ul>
 
 ## Music
