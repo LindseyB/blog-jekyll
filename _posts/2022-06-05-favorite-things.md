@@ -14,7 +14,6 @@ date: 2022-06-05
 * [Sourpuss Clothing](https://www.sourpussclothing.com/)
 * [CRYPTOSTYLIS](https://www.etsy.com/shop/cryptostylis)
 * [SegraSoul](https://SEGRASOUL.COM)
-* [Mori Moon Shoppe](https://www.morimoon.com/)
 * [The Pretty Cult](https://www.theprettycult.com/)
 * [Cat Coven](https://www.catcoven.com/)
 * [Disturbia](https://disturbia.us/)
@@ -33,6 +32,7 @@ date: 2022-06-05
 * [Black Thorn LA](https://blackthornla.com/)
 * [Em & Sprout](https://emandsprout.com/)
 * [Studio House Designs](https://studiohousedesigns.com/)
+* [Discount Cemetery](https://www.discountcemetery.com/)
 
 ## Jewelry
 
@@ -51,7 +51,8 @@ date: 2022-06-05
 * [Open the Cellar Door](https://www.etsy.com/shop/openthecellardoor)
 * [The Soldered Spell](https://www.etsy.com/shop/TheSolderedSpell)
 * [Regal Rose](https://www.regalrose.co.uk/)
-* [Etah Love](https://etahlove.com/)
+* [Clocks and Colours](https://www.clocksandcolours.com/)
+* [Mysticum Luna](https://mysticumluna.com/)
 
 ## Home Goods
 
@@ -68,34 +69,29 @@ date: 2022-06-05
 * [Shop Zoki](https://shopzoki.com/)
 * [Velvet Apparition](https://velvetapparition.com/)
 * [Mustard Beetle](https://mustardbeetle.com/)
+* [Sin in Linen](https://www.sininlinen.com)
+* 
 
 ## Tea
 
-* [Alfred](https://alfred.la/collections/products/products/loose-leaf-teas?variant=139992662034)
+* [Alfred](https://alfred.la/)
 * [LUCID TEA](https://lovelucidtea.com/)
 * [Harney & Sons](https://www.harney.com/)
-* [Ivy's Tea Co.](https://www.ivystea.com/)
-* [T project](https://www.tprojectshop.com/)
 * [Floating Leaves Tea](https://floatingleaves.com/)
 * [Mansa](https://mansatea.com/)
 * [The Raven & Reverie Shoppe](https://ravenandreverie.com/)
 * [Gryphon's Tea](https://www.gryphonstea.com/)
 * [Riddle's Tea Shoppe](https://riddlesteashoppe.com/)
-* [Pitch Black North](https://www.pitchblacknorth.com/)
 * [Petals and Poison](https://www.petalsandpoison.com/)
 
 ## Mechanical Keyboards
-* [Kono](https://kono.store/)
-* [The Key Dot Co](https://thekey.company/)
 * [Omnitype](https://omnitype.com/)
 * [Drop](https://drop.com/mechanical-keyboards/drops)
-* [PMK](https://pimpmykeyboard.com/)
+* [Signature Plastics](https://spkeyboards.com/)
 * [Sludgekidd](https://www.instagram.com/sludgekidd/)
-* [Just Another Keymaker](https://www.keymaker.space/)
 * [NZ Caps](https://www.nzcaps.com/)
 * [KBDfans](https://kbdfans.com/)
 * [NovelKeys](https://novelkeys.xyz/)
-* [WASD Keyboards](https://www.wasdkeyboards.com/)
 * [Cannon Keys](https://cannonkeys.com/)
 * [Keeb Monkey](https://www.keebmonkey.com/)
 * [Keychron](https://www.keychron.com/)
@@ -104,6 +100,7 @@ date: 2022-06-05
 * [Personal Loot](https://personalloot.com/)
 
 ## Witchy Supplies
+
 * [WytchWood](https://wytchwood.com/)
 * [Tamed Wild](https://tamedwild.com/)
 * [Mama Wunderbar](https://mamawunderbar.com/)
