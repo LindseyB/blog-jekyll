@@ -10,7 +10,7 @@ I'm currently a remote worker for GitHub living in the bay area and a huge fan o
 ## Social Media
 
 <ul style="list-style-type: none">
-  <li><i class="fa-brands fa-bluesky"></i> <a href="https://bsky.app/profile/lindseyb.bsky.social">@lindseyb.bsky.social</a></li>
+  <li><i class="fa-brands fa-bluesky"></i> <a href="https://bsky.app/profile/lindsey.codes">@lindsey.codes</a></li>
   <li><i class="fab fa-fw fa-instagram"></i> <a href="https://instagram.com/LindseyBieda">@LindseyBieda</a></li>
   <li><i class="fab fa-fw fa-github"></i> <a href="https://github.com/LindseyB">@LindseyB</a></li>
   <li><i class="fab fa-fw fa-itch-io"></i> <a href="https://lindseybieda.itch.io">LindseyBieda</a></li>
