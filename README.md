@@ -10,3 +10,14 @@ Formally this was https://github.com/LindseyB/blog written in sinatra using ruby
 bundle install           # install dependencies
 bundle exec jekyll serve # run server
 ```
+
+## Public Urls
+
+| Url                         | Host          |
+|-----------------------------|---------------|
+| https://rarlindseysmash.com | github pages  |
+| https://lindsey.codes       | render mirror |
+
+----- 
+
+Made with 🍵 by Lindsey 
