@@ -7,6 +7,8 @@ I'm Lindsey: a staff software engineering manager with a degree in computer scie
 
 I'm currently a remote worker for GitHub living in the bay area and a huge fan of both pair programming and [purr programming](https://society6.com/product/purr-programmer_sticker).
 
+In my free time I like to work on 🎨 [art](https://lindseyb.github.io/fART/) and during dark nights I take out my telescope and do some 🔭 [astrophotography](https://lindseyb.github.io/astrophotography/).
+
 ## Social Media
 
 <ul style="list-style-type: none">
