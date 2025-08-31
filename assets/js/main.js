@@ -6,7 +6,7 @@ function addLastFmWidgetToDiv(divSelector, username, apiKey) {
   container.style.paddingBottom = '32px';
 
   var title = document.createElement('div');
-  title.innerText = '🎵 Last.fm Weekly Top Tracks';
+  title.innerText = '🎵 Last.fm Recent tracks';
   title.style.fontWeight = 'bold';
   title.style.marginBottom = '8px';
   container.appendChild(title);
@@ -21,12 +21,12 @@ function addLastFmWidgetToDiv(divSelector, username, apiKey) {
   loading.innerText = 'Loading...';
   container.appendChild(loading);
 
-  fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getweeklytrackchart&user=${encodeURIComponent(username)}&api_key=${encodeURIComponent(apiKey)}&format=json`)
+  fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=${encodeURIComponent(username)}&api_key=${encodeURIComponent(apiKey)}&format=json&limit=10`)
     .then(res => res.json())
     .then(data => {
       loading.remove();
-      if (data.weeklytrackchart && data.weeklytrackchart.track && data.weeklytrackchart.track.length > 0) {
-        data.weeklytrackchart.track.slice(0, 10).forEach(function(track) {
+      if (data.recenttracks && data.recenttracks.track && data.recenttracks.track.length > 0) {
+        data.recenttracks.track.forEach(function(track) {
           var li = document.createElement('li');
           li.style.marginBottom = '4px';
           var trackName = track.name || 'Unknown';
