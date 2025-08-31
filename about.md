@@ -5,7 +5,7 @@ title: About
 
 I'm Lindsey: a staff software engineering manager with a degree in computer science who has been programming since I was 12. I love trying to mix art and code in both how I write code and coming up with new projects that find ways to blend the two. Tea is a way of life for me and reading is my one true love.
 
-I'm currently a remote worker for GitHub living in the bay area and a huge fan of both pair programming and [purr programming](https://society6.com/product/purr-programmer_sticker).
+I'm currently a remote worker for GitHub living in the bay area and a huge fan of both pair programming and purr programming.
 
 In my free time I like to work on 🎨 [art](https://lindseyb.github.io/fART/) and during dark nights I take out my telescope and do some 🔭 [astrophotography](https://lindseyb.github.io/astrophotography/).
 
