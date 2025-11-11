@@ -33,6 +33,7 @@ date: 2022-06-05
 * [Em & Sprout](https://emandsprout.com/)
 * [Studio House Designs](https://studiohousedesigns.com/)
 * [Discount Cemetery](https://www.discountcemetery.com/)
+* [Girrlscout](https://girrlscoutshop.com)
 
 ## Jewelry
 
