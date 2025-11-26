@@ -34,6 +34,8 @@ date: 2022-06-05
 * [Studio House Designs](https://studiohousedesigns.com/)
 * [Discount Cemetery](https://www.discountcemetery.com/)
 * [Girrlscout](https://girrlscoutshop.com)
+* [L'hermite](https://lhermite.ca/)
+* [Ectogasm](https://www.ectogasm.net/)
 
 ## Jewelry
 
@@ -54,11 +56,14 @@ date: 2022-06-05
 * [Regal Rose](https://www.regalrose.co.uk/)
 * [Clocks and Colours](https://www.clocksandcolours.com/)
 * [Mysticum Luna](https://mysticumluna.com/)
+* [Scarlett C Dancer](https://scarlettcdancer.com/)
+* [Flowers for Aphrodite](https://www.etsy.com/shop/FlowersforAphrodite)
+* [Caltori](https://www.caltori.com/)
+* [Veiled Nocturne](https://veilednocturne.com/)
 
 ## Home Goods
 
 * [Seance Perfumes](https://seanceperfumes.com/)
-* [Catbird](https://www.catbirdnyc.com/beauty-home-gifts/home-gifts/candles.html)
 * [Miss Havisham's Curiosities](https://www.misshavishamscuriosities.com)
 * [Spitfire Girl](https://www.spitfiregirl.com/)
 * [Witch Baby Soap](https://www.witchbabysoap.com/)
@@ -71,7 +76,8 @@ date: 2022-06-05
 * [Velvet Apparition](https://velvetapparition.com/)
 * [Mustard Beetle](https://mustardbeetle.com/)
 * [Sin in Linen](https://www.sininlinen.com)
-* 
+* [Phandom Row](https://phantomrow.com/)
+* [House of Hex](https://houseofhexshop.com/)
 
 ## Tea
 
@@ -121,3 +127,9 @@ date: 2022-06-05
 * [mooncat](https://www.mooncat.com/)
 * [Black Moon Cosmetics](https://www.blackmooncosmetics.com/)
 * [Melt Cosmetics](https://www.meltcosmetics.com/)
+* [Jolie Beauty](https://usa.joliebeauty.co.uk)
+* [Heretic Parfum](https://hereticparfum.com/)
+
+## Other
+
+* [Open Sea Design Co](https://openseadesignco.com/)
