@@ -11,7 +11,6 @@ date: 2022-06-05
 * [Restyle](https://restyle.pl/)
 * [Rogue + Wolf](https://rogueandwolf.com/)
 * [Cavity Colors](https://cavitycolors.com/)
-* [Sourpuss Clothing](https://www.sourpussclothing.com/)
 * [CRYPTOSTYLIS](https://www.etsy.com/shop/cryptostylis)
 * [SegraSoul](https://SEGRASOUL.COM)
 * [The Pretty Cult](https://www.theprettycult.com/)
@@ -36,6 +35,10 @@ date: 2022-06-05
 * [Girrlscout](https://girrlscoutshop.com)
 * [L'hermite](https://lhermite.ca/)
 * [Ectogasm](https://www.ectogasm.net/)
+* [Witchwood Bags](https://witchwoodbags.com/)
+* [Hellcats USA](https://www.hellcatsusa.com/)
+* [Hell Bunny](https://www.hellbunny.com)
+* 
 
 ## Jewelry
 
@@ -60,6 +63,7 @@ date: 2022-06-05
 * [Flowers for Aphrodite](https://www.etsy.com/shop/FlowersforAphrodite)
 * [Caltori](https://www.caltori.com/)
 * [Veiled Nocturne](https://veilednocturne.com/)
+* [Alchemy of England](https://alchemyofengland.com)
 
 ## Home Goods
 
@@ -78,6 +82,8 @@ date: 2022-06-05
 * [Sin in Linen](https://www.sininlinen.com)
 * [Phandom Row](https://phantomrow.com/)
 * [House of Hex](https://houseofhexshop.com/)
+* [The Blackened Teeth](https://www.theblackenedteeth.com/)
+* 
 
 ## Tea
 
