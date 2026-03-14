@@ -38,7 +38,7 @@ date: 2022-06-05
 * [Witchwood Bags](https://witchwoodbags.com/)
 * [Hellcats USA](https://www.hellcatsusa.com/)
 * [Hell Bunny](https://www.hellbunny.com)
-* 
+* [Grit N Glory](https://www.gritnglory.com/)
 
 ## Jewelry
 
