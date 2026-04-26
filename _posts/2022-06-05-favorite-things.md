@@ -100,7 +100,6 @@ date: 2022-06-05
 
 ## Mechanical Keyboards
 * [Omnitype](https://omnitype.com/)
-* [Drop](https://drop.com/mechanical-keyboards/drops)
 * [Signature Plastics](https://spkeyboards.com/)
 * [Sludgekidd](https://www.instagram.com/sludgekidd/)
 * [NZ Caps](https://www.nzcaps.com/)
@@ -109,7 +108,6 @@ date: 2022-06-05
 * [Cannon Keys](https://cannonkeys.com/)
 * [Keeb Monkey](https://www.keebmonkey.com/)
 * [Keychron](https://www.keychron.com/)
-* [Mintlodica](https://mintlodica.com/)
 * [Osume Keys](https://osumekeys.com/)
 * [Personal Loot](https://personalloot.com/)
 
