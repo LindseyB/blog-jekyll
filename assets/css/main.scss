@@ -97,6 +97,57 @@ search: false
   box-sizing: border-box;
 }
 
+/* ==========================================================================
+   Win31 VHS / Retro Image Filter
+   ========================================================================== */
+
+[data-theme="win31"] img {
+  filter:
+    grayscale(60%)
+    contrast(1.15)
+    brightness(0.92)
+    saturate(0.75)
+    sepia(15%) !important;
+  animation: vhs-flicker 4s steps(1) infinite !important;
+}
+
+@keyframes vhs-flicker {
+  0%   { opacity: 1; }
+  88%  { opacity: 1; }
+  89%  { opacity: 0.65; filter: grayscale(60%) contrast(1.4) brightness(0.85) saturate(0.4) sepia(30%) hue-rotate(8deg); }
+  90%  { opacity: 1; }
+  94%  { opacity: 1; }
+  95%  { opacity: 0.75; filter: grayscale(45%) contrast(1.3) brightness(0.88) saturate(0.5) sepia(25%) hue-rotate(-5deg); }
+  96%  { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+/* Scanline overlay — win31 only */
+[data-theme="win31"] body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.12) 2px,
+      rgba(0, 0, 0, 0.12) 4px
+    );
+  animation: scanline-roll 5s linear infinite;
+}
+
+@keyframes scanline-roll {
+  0%   { background-position: 0 0; }
+  100% { background-position: 0 100vh; }
+}
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -1134,6 +1185,15 @@ div.highlight {
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
 
+/* Garamond BE Condensed */
+@font-face {
+  font-family: 'Garamond BE Condensed';
+  src: url('/assets/images/Garamond BE Condensed.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Windows 3.1 System Font */
 @font-face {
   font-family: 'Windows 3.1 System Font';
@@ -1144,66 +1204,67 @@ div.highlight {
 }
 
 [data-theme="win31"] {
-  --color-bg-primary:    #c0c0c0;
-  --color-bg-secondary:  #d4d0c8;
-  --color-bg-tertiary:   #b0b0b0;
-  --color-bg-code:       #ffffff;
-  --color-bg-accent:     #000080;
+  --color-bg-primary:    #e8d4d0;
+  --color-bg-secondary:  #f0dfd8;
+  --color-bg-tertiary:   #dcc5c0;
+  --color-bg-code:       #fef9f8;
+  --color-bg-accent:     #c77daa;
 
-  --color-text-primary:  #000000;
-  --color-text-secondary:#222222;
-  --color-text-muted:    #555555;
+  --color-text-primary:  #2a2a2a;
+  --color-text-secondary:#4d4d4d;
+  --color-text-muted:    #7a7a7a;
   --color-text-inverse:  #ffffff;
 
-  --color-accent-primary:   #000080;
-  --color-accent-secondary: #0000aa;
-  --color-accent-purple:    #800000;
-  --color-accent-purple-light: #008080;
+  --color-accent-primary:   #c77daa;
+  --color-accent-secondary: #e8a5d5;
+  --color-accent-purple:    #7db8c4;
+  --color-accent-purple-light: #a8dce8;
 
-  --color-border:        #808080;
-  --color-border-accent: #000080;
+  --color-border:        #d4ada8;
+  --color-border-accent: #c77daa;
 
-  --luna-gradient:       linear-gradient(180deg, #000080 0%, #1084d0 100%);
-  --luna-gradient-soft:  linear-gradient(180deg, rgba(0,0,128,0.15) 0%, rgba(16,132,208,0.10) 100%);
+  --luna-gradient:       linear-gradient(180deg, #c77daa 0%, #7db8c4 100%);
+  --luna-gradient-soft:  linear-gradient(180deg, rgba(199,125,170,0.15) 0%, rgba(125,184,196,0.10) 100%);
 
-  --shadow-sm:  2px 2px 0 #808080;
-  --shadow-md:  3px 3px 0 #808080;
-  --shadow-lg:  4px 4px 0 #808080;
+  --shadow-sm:  2px 2px 0 #d4ada8;
+  --shadow-md:  3px 3px 0 #d4ada8;
+  --shadow-lg:  4px 4px 0 #d4ada8;
 
   --border-radius:    0px;
   --border-radius-lg: 0px;
 
-  --font-display: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace;
+  --font-display: 'Garamond BE Condensed', 'Windows 3.1 System Font', 'IBM Plex Mono', serif;
+  --letter-spacing-display: -2px;
   --font-mono:    'Windows 3.1 System Font', 'IBM Plex Mono', monospace;
 }
 
 /* Desktop background with marble texture tiled */
 [data-theme="win31"] body {
-  background-color: #008080 !important;
+  background-color: #7db8c4 !important;
   background-image: url('/assets/images/marble.bmp') !important;
   background-repeat: repeat !important;
   background-attachment: fixed !important;
+  opacity: 1 !important;
   font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
   font-size: 11px !important;
-  color: #000000 !important;
 }
 
 /* Main wrapper becomes a raised window on the desktop */
 [data-theme="win31"] .site-wrapper {
-  background: #c0c0c0 !important;
+  background: #e8d4d0 !important;
   border-top:    2px solid #ffffff !important;
   border-left:   2px solid #ffffff !important;
-  border-right:  2px solid #808080 !important;
-  border-bottom: 2px solid #808080 !important;
-  box-shadow: 2px 2px 0 #000000 !important;
+  border-right:  2px solid #d4ada8 !important;
+  border-bottom: 2px solid #d4ada8 !important;
+  box-shadow: 2px 2px 0 #2a2a2a !important;
   margin: 8px auto !important;
   max-width: 960px !important;
 }
 
-/* Two-row header: navy title bar on top, gray menubar below */
+/* Two-row header: magenta/pink title bar on top, soft pink menubar below */
 [data-theme="win31"] .site-header {
-  background: #c0c0c0 !important;
-  border-bottom: 2px solid #808080 !important;
+  background: #e8d4d0 !important;
+  border-bottom: 2px solid #d4ada8 !important;
   backdrop-filter: none !important;
   box-shadow: none !important;
   padding: 0 !important;
@@ -1221,30 +1282,30 @@ div.highlight {
   gap: 0 !important;
 }
 
-/* Site title lives in a navy title bar */
+/* Site title lives in a magenta/pink title bar */
 [data-theme="win31"] .site-title {
   display: block !important;
-  background: #000080 !important;
-  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
-  font-size: 1rem !important;
+  background: #c77daa !important;
+  font-family: 'Garamond BE Condensed', 'Windows 3.1 System Font', 'IBM Plex Mono', serif !important;
+  font-size: 2.2rem !important;
   font-weight: bold !important;
   color: #ffffff !important;
   text-shadow: none !important;
   text-transform: none !important;
-  letter-spacing: 0 !important;
+  letter-spacing: -2px !important;
   text-decoration: none !important;
-  padding: 3px 8px !important;
+  padding: 12px 16px !important;
   width: 100% !important;
   box-sizing: border-box !important;
 }
 
 [data-theme="win31"] .site-title:hover {
-  background: #1084d0 !important;
+  background: #e8a5d5 !important;
   color: #ffffff !important;
   text-shadow: none !important;
 }
 
-/* Nav links row — gray menubar */
+/* Nav links row — soft pink menubar */
 [data-theme="win31"] .nav-links {
   display: flex !important;
   flex-wrap: wrap !important;
@@ -1252,41 +1313,41 @@ div.highlight {
   list-style: none !important;
   margin: 0 !important;
   padding: 4px 6px !important;
-  background: #c0c0c0 !important;
+  background: #e8d4d0 !important;
   border-top: 1px solid #ffffff !important;
 }
 
 /* Each nav link is a raised Windows button */
 [data-theme="win31"] .nav-link {
-  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
-  font-size: 0.9rem !important;
+  font-family: 'Garamond BE Condensed', 'Windows 3.1 System Font', 'IBM Plex Mono', serif !important;
+  font-size: 1.4rem !important;
   font-weight: normal !important;
-  color: #000000 !important;
-  background: #c0c0c0 !important;
+  color: #2a2a2a !important;
+  background: #e8d4d0 !important;
+  letter-spacing: -2px !important;
   text-transform: none !important;
-  letter-spacing: 0 !important;
-  padding: 2px 10px !important;
+  padding: 6px 14px !important;
   text-decoration: none !important;
   display: block !important;
   transition: none !important;
   /* Raised 3D border */
   border-top:    2px solid #ffffff !important;
   border-left:   2px solid #ffffff !important;
-  border-right:  2px solid #808080 !important;
-  border-bottom: 2px solid #808080 !important;
+  border-right:  2px solid #d4ada8 !important;
+  border-bottom: 2px solid #d4ada8 !important;
 }
 
 [data-theme="win31"] .nav-link:hover {
-  background: #c0c0c0 !important;
-  color: #000000 !important;
+  background: #f0dfd8 !important;
+  color: #c77daa !important;
   text-decoration: underline !important;
   text-shadow: none !important;
 }
 
 [data-theme="win31"] .nav-link:active {
   /* Depressed/sunken state */
-  border-top:    2px solid #808080 !important;
-  border-left:   2px solid #808080 !important;
+  border-top:    2px solid #d4ada8 !important;
+  border-left:   2px solid #d4ada8 !important;
   border-right:  2px solid #ffffff !important;
   border-bottom: 2px solid #ffffff !important;
   padding: 3px 9px 1px 11px !important;
@@ -1298,18 +1359,18 @@ div.highlight {
 
 /* Main content area — sunken panel */
 [data-theme="win31"] .site-main {
-  background: #c0c0c0 !important;
+  background: #e8d4d0 !important;
   padding: 12px !important;
 }
 
 /* Post cards as classic windows */
 [data-theme="win31"] .post-card {
-  background: #c0c0c0 !important;
+  background: #e8d4d0 !important;
   border-top:    2px solid #ffffff !important;
   border-left:   2px solid #ffffff !important;
-  border-right:  2px solid #808080 !important;
-  border-bottom: 2px solid #808080 !important;
-  box-shadow: 1px 1px 0 #000000 !important;
+  border-right:  2px solid #d4ada8 !important;
+  border-bottom: 2px solid #d4ada8 !important;
+  box-shadow: 1px 1px 0 #2a2a2a !important;
   transform: none !important;
   border-radius: 0 !important;
   margin-bottom: 12px !important;
@@ -1319,30 +1380,32 @@ div.highlight {
 
 [data-theme="win31"] .post-card:hover {
   transform: none !important;
-  box-shadow: 1px 1px 0 #000000 !important;
+  box-shadow: 1px 1px 0 #2a2a2a !important;
 }
 
 /* Post card title bar */
 [data-theme="win31"] .post-card .post-title,
 [data-theme="win31"] .post-card h2,
 [data-theme="win31"] .post-card h3 {
-  background: #000080 !important;
+  background: #c77daa !important;
   color: #ffffff !important;
-  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
-  font-size: 1rem !important;
+  font-family: 'Garamond BE Condensed', 'Windows 3.1 System Font', 'IBM Plex Mono', serif !important;
+  font-size: 1.4rem !important;
   font-weight: bold !important;
   text-shadow: none !important;
   text-transform: none !important;
-  letter-spacing: 0 !important;
-  padding: 3px 6px !important;
+  letter-spacing: -2px !important;
+  padding: 8px 12px !important;
   margin: 0 !important;
 }
 
-[data-theme="win31"] .post-card .post-title a,
-[data-theme="win31"] .post-card h2 a,
-[data-theme="win31"] .post-card h3 a {
+[data-theme="win31"] .post-card h2 a {
   color: #ffffff !important;
   text-decoration: none !important;
+  font-size: 2rem !important;
+  position: relative !important;
+  display: inline-block !important;
+  padding-right: 40px !important;
 }
 
 [data-theme="win31"] .post-card .post-meta,
@@ -1351,9 +1414,9 @@ div.highlight {
   padding: 6px 8px !important;
   font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
   font-size: 1.1rem !important;
-  color: #000000 !important;
+  color: #2a2a2a !important;
   border: none !important;
-  background: #c0c0c0 !important;
+  background: #e8d4d0 !important;
 }
 
 /* Headings */
@@ -1361,24 +1424,110 @@ div.highlight {
 [data-theme="win31"] h2,
 [data-theme="win31"] h3,
 [data-theme="win31"] h4 {
-  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
-  letter-spacing: 0 !important;
+  font-family: 'Garamond BE Condensed', 'Windows 3.1 System Font', 'IBM Plex Mono', serif !important;
+  letter-spacing: -2px !important;
   text-shadow: none !important;
-  color: #000000 !important;
+  color: #2a2a2a !important;
+  background: none !important;
 }
 
-[data-theme="win31"] h1 { font-size: 1.1rem !important; font-weight: bold !important; }
-[data-theme="win31"] h2 { font-size: 1rem   !important; font-weight: bold !important; }
-[data-theme="win31"] h3 { font-size: 0.9rem !important; font-weight: bold !important; }
+[data-theme="win31"] h1 { font-size: 4.2rem !important; font-weight: bold !important; }
+[data-theme="win31"] h2 { font-size: 3.8rem !important; font-weight: bold !important; }
+[data-theme="win31"] h3 { font-size: 3.4rem !important; font-weight: bold !important; }
 
-/* Post card title bars — re-assert white text after global h2 color override */
+/* Page headers with background for contrast */
+[data-theme="win31"] .page-header {
+  background-color: transparent !important;
+  padding: 30px 32px !important;
+  margin: 0 0 24px 0 !important;
+  border: none !important;
+  border-bottom: none !important;
+}
+
+[data-theme="win31"] .page-header h1,
+[data-theme="win31"] .page-title {
+  background-color: transparent !important;
+  color: #2a2a2a !important;
+  -webkit-text-fill-color: #2a2a2a !important;
+  font-size: 4rem !important;
+  font-weight: bold !important;
+  font-family: 'Garamond BE Condensed', 'Windows 3.1 System Font', 'IBM Plex Mono', serif !important;
+  letter-spacing: -2px !important;
+  text-decoration: none !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+
+/* Post header with pink title bar */
+[data-theme="win31"] .post-header {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin-bottom: 2rem !important;
+  position: relative !important;
+}
+
+/* Inside post-list only — pink title bar */
+[data-theme="win31"] .post-list .post-header {
+  background: #c77daa !important;
+}
+
+[data-theme="win31"] .post-header h2 {
+  background-color: #c77daa !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  padding: 6px 40px 6px 12px !important;
+  margin: 0 0 2rem 0 !important;
+  font-size: 2rem !important;
+  font-weight: bold !important;
+  font-family: 'Garamond BE Condensed', 'Windows 3.1 System Font', 'IBM Plex Mono', serif !important;
+  letter-spacing: -2px !important;
+  text-decoration: none !important;
+  position: relative !important;
+  line-height: 1.4 !important;
+}
+
+[data-theme="win31"] .post-header h2 a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+/* Close button for post header */
+[data-theme="win31"] .post-header h2::after {
+  content: '\00d7' !important;
+  position: absolute !important;
+  top: 50% !important;
+  right: 6px !important;
+  transform: translateY(-50%) !important;
+  width: 24px !important;
+  height: 24px !important;
+  background: #e8d4d0 !important;
+  color: #2a2a2a !important;
+  -webkit-text-fill-color: #2a2a2a !important;
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  font-family: Arial, sans-serif !important;
+  line-height: 20px !important;
+  text-align: center !important;
+  display: block !important;
+  /* Raised Win3.1 3D border */
+  border-top:    2px solid #ffffff !important;
+  border-left:   2px solid #ffffff !important;
+  border-right:  2px solid #7a3d68 !important;
+  border-bottom: 2px solid #7a3d68 !important;
+  cursor: default !important;
+  box-shadow: 1px 1px 0 #000000 !important;
+}
+
+/* Post card title bars — re-assert black text with no background */
 [data-theme="win31"] .post-card .post-title,
 [data-theme="win31"] .post-card h2,
-[data-theme="win31"] .post-card h3,
-[data-theme="win31"] .post-card .post-header h2,
-[data-theme="win31"] .post-card .post-header h3 {
-  background: #000080 !important;
-  color: #ffffff !important;
+[data-theme="win31"] .post-card h3 {
+  background: transparent !important;
+  margin-bottom: 0 !important;
+  color: #2a2a2a !important;
 }
 
 [data-theme="win31"] .post-card .post-title a,
@@ -1386,7 +1535,7 @@ div.highlight {
 [data-theme="win31"] .post-card h3 a,
 [data-theme="win31"] .post-card .post-header h2 a,
 [data-theme="win31"] .post-card .post-header h3 a {
-  color: #ffffff !important;
+  color: #2a2a2a !important;
   text-decoration: none !important;
 }
 
@@ -1397,30 +1546,30 @@ div.highlight {
 [data-theme="win31"] td {
   font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
   font-size: 1.2rem !important;
-  color: #000000 !important;
+  color: #2a2a2a !important;
 }
 
-/* Links — classic blue underline */
+/* Links — hot pink/teal underline */
 [data-theme="win31"] a:not(.site-title):not(.nav-link) {
-  color: #000080 !important;
+  color: #c77daa !important;
   text-decoration: underline !important;
-  text-decoration-color: #000080 !important;
+  text-decoration-color: #c77daa !important;
 }
 
 [data-theme="win31"] a:not(.site-title):not(.nav-link):hover {
-  color: #0000ff !important;
-  text-decoration-color: #0000ff !important;
+  color: #7db8c4 !important;
+  text-decoration-color: #7db8c4 !important;
 }
 
-/* Code blocks — sunken white text box */
+/* Code blocks — tinted white text box */
 [data-theme="win31"] pre,
 [data-theme="win31"] code {
   font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
   font-size: 1.2rem !important;
-  background: #ffffff !important;
-  color: #000000 !important;
-  border-top:    2px solid #808080 !important;
-  border-left:   2px solid #808080 !important;
+  background: #fef9f8 !important;
+  color: #2a2a2a !important;
+  border-top:    2px solid #d4ada8 !important;
+  border-left:   2px solid #d4ada8 !important;
   border-right:  2px solid #ffffff !important;
   border-bottom: 2px solid #ffffff !important;
   box-shadow: none !important;
@@ -1430,23 +1579,23 @@ div.highlight {
 
 /* Post content border sunken */
 [data-theme="win31"] .post-content {
-  border-top:    2px solid #808080 !important;
-  border-left:   2px solid #808080 !important;
+  border-top:    2px solid #d4ada8 !important;
+  border-left:   2px solid #d4ada8 !important;
   border-right:  2px solid #ffffff !important;
   border-bottom: 2px solid #ffffff !important;
   padding: 8px !important;
-  background: #ffffff !important;
+  background: #fef9f8 !important;
 }
 
 /* Theme toggle becomes a classic Win3.1 button */
 [data-theme="win31"] .theme-toggle {
-  background: #c0c0c0 !important;
+  background: #e8d4d0 !important;
   border-top:    2px solid #ffffff !important;
   border-left:   2px solid #ffffff !important;
-  border-right:  2px solid #808080 !important;
-  border-bottom: 2px solid #808080 !important;
+  border-right:  2px solid #d4ada8 !important;
+  border-bottom: 2px solid #d4ada8 !important;
   box-shadow: none !important;
-  color: #000000 !important;
+  color: #2a2a2a !important;
   font-size: 0.85rem !important;
   font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
   border-radius: 0 !important;
@@ -1458,41 +1607,42 @@ div.highlight {
 }
 
 [data-theme="win31"] .theme-toggle:active {
-  border-top:    2px solid #808080 !important;
-  border-left:   2px solid #808080 !important;
+  border-top:    2px solid #d4ada8 !important;
+  border-left:   2px solid #d4ada8 !important;
   border-right:  2px solid #ffffff !important;
   border-bottom: 2px solid #ffffff !important;
 }
 
 /* CTA Buttons — raised Win3.1 style */
 [data-theme="win31"] .cta-button {
-  background: #c0c0c0 !important;
-  color: #000000 !important;
+  background: #e8d4d0 !important;
+  color: #2a2a2a !important;
   border-top:    2px solid #ffffff !important;
   border-left:   2px solid #ffffff !important;
-  border-right:  2px solid #808080 !important;
-  border-bottom: 2px solid #808080 !important;
-  box-shadow: 1px 1px 0 #000000 !important;
+  border-right:  2px solid #d4ada8 !important;
+  border-bottom: 2px solid #d4ada8 !important;
+  box-shadow: 1px 1px 0 #2a2a2a !important;
   border-radius: 0 !important;
-  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
-  font-size: 1rem !important;
+  font-family: 'Garamond BE Condensed', 'Windows 3.1 System Font', 'IBM Plex Mono', serif !important;
+  font-size: 1.6rem !important;
+  letter-spacing: -2px !important;
   font-weight: normal !important;
-  padding: 4px 16px !important;
+  padding: 8px 24px !important;
   text-decoration: none !important;
   transition: none !important;
 }
 
 [data-theme="win31"] .cta-button:hover {
-  background: #c0c0c0 !important;
-  color: #000000 !important;
+  background: #f0dfd8 !important;
+  color: #c77daa !important;
   text-decoration: underline !important;
   transform: none !important;
-  box-shadow: 1px 1px 0 #000000 !important;
+  box-shadow: 1px 1px 0 #2a2a2a !important;
 }
 
 [data-theme="win31"] .cta-button:active {
-  border-top:    2px solid #808080 !important;
-  border-left:   2px solid #808080 !important;
+  border-top:    2px solid #d4ada8 !important;
+  border-left:   2px solid #d4ada8 !important;
   border-right:  2px solid #ffffff !important;
   border-bottom: 2px solid #ffffff !important;
   box-shadow: none !important;
@@ -1501,28 +1651,39 @@ div.highlight {
 
 /* Footer */
 [data-theme="win31"] .site-footer {
-  background: #c0c0c0 !important;
-  border-top: 2px solid #808080 !important;
+  background: #e8d4d0 !important;
+  border-top: 2px solid #d4ada8 !important;
   box-shadow: none !important;
   font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
   font-size: 1.1rem !important;
-  color: #000000 !important;
+  color: #2a2a2a !important;
 }
 
 [data-theme="win31"] .site-footer p,
 [data-theme="win31"] .footer-copyright p {
-  color: #000000 !important;
+  color: #2a2a2a !important;
   font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
   font-size: 1.1rem !important;
 }
 
 [data-theme="win31"] .footer-link {
-  color: #000080 !important;
+  color: #c77daa !important;
 }
 
-/* Luna moth in footer — subtle grayscale only, unchanged */
-[data-theme="win31"] .footer-moth {
-  filter: grayscale(60%) !important;
+[data-theme="win31"] .post-card img {
+  position: relative !important;
+  display: block !important;
+}
+
+[data-theme="win31"] .post-card img::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: rgba(125, 184, 196, 0.3) !important;
+  pointer-events: none !important;
 }
 
 /* Hero moth — pixelated, fills space, no repeat */
@@ -1530,8 +1691,8 @@ div.highlight {
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
-  image-rendering: pixelated !important;
   image-rendering: crisp-edges !important;
+  image-rendering: pixelated !important;
   opacity: 0.30 !important;
   filter: grayscale(80%) contrast(1.2) !important;
 }
@@ -1559,16 +1720,16 @@ div.highlight {
 
 /* All images in retro mode — pixelated with VHS effect */
 [data-theme="win31"] img {
-  image-rendering: pixelated !important;
   image-rendering: crisp-edges !important;
-  filter: grayscale(40%) contrast(1.1) brightness(0.95) !important;
+  image-rendering: pixelated !important;
+  filter: grayscale(60%) contrast(1.1) brightness(0.95) !important;
 }
 
 /* Project images also get the VHS treatment */
 [data-theme="win31"] .project-image {
-  image-rendering: pixelated !important;
   image-rendering: crisp-edges !important;
-  filter: grayscale(40%) contrast(1.1) brightness(0.95) !important;
+  image-rendering: pixelated !important;
+  filter: grayscale(60%) contrast(1.1) brightness(0.95) !important;
 }
 
 @keyframes vhs-noise {
@@ -1597,12 +1758,12 @@ div.highlight {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.8);
-  background: #c0c0c0;
+  background: #e8d4d0;
   border-top:    2px solid #ffffff;
   border-left:   2px solid #ffffff;
-  border-right:  2px solid #808080;
-  border-bottom: 2px solid #808080;
-  box-shadow: 3px 3px 0 #000000;
+  border-right:  2px solid #d4ada8;
+  border-bottom: 2px solid #d4ada8;
+  box-shadow: 3px 3px 0 #2a2a2a;
   z-index: 100000;
   opacity: 0;
   transition: opacity 0.15s ease, transform 0.15s ease;
@@ -1618,12 +1779,13 @@ div.highlight {
 }
 
 .win31-toast-titlebar {
-  background: #000080;
+  background: #c77daa;
   color: #ffffff;
-  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace;
-  font-size: 0.9rem;
+  font-family: 'Garamond BE Condensed', 'Windows 3.1 System Font', 'IBM Plex Mono', serif;
+  font-size: 0.95rem;
+  letter-spacing: -2px;
   font-weight: bold;
-  padding: 3px 6px;
+  padding: 4px 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1635,28 +1797,28 @@ div.highlight {
 }
 
 .win31-toast-close {
-  background: #c0c0c0;
+  background: #e8d4d0;
   border-top:    1px solid #ffffff;
   border-left:   1px solid #ffffff;
-  border-right:  1px solid #808080;
-  border-bottom: 1px solid #808080;
-  color: #000000;
-  font-size: 0.8rem;
-  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace;
-  width: 16px;
-  height: 14px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  border-right:  1px solid #d4ada8;
+  border-bottom: 1px solid #d4ada8;
+  color: #2a2a2a;
+  font-size: 0.9rem;
+  font-family: Arial, sans-serif;
+  width: 18px;
+  height: 16px;
+  display: inline-block;
+  line-height: 14px;
+  text-align: center;
   cursor: default;
-  line-height: 1;
+  vertical-align: middle;
 }
 
 .win31-toast-body {
   padding: 16px 20px 12px;
   font-size: 1.1rem;
   font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace;
-  color: #000000;
+  color: #2a2a2a;
 }
 
 .win31-toast-icon {
@@ -1670,7 +1832,7 @@ div.highlight {
 }
 
 .win31-toast-sub {
-  color: #444444;
+  color: #666666;
   font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace;
   font-size: 1rem;
 }
@@ -1681,12 +1843,12 @@ div.highlight {
 }
 
 .win31-toast-btn {
-  background: #c0c0c0;
+  background: #e8d4d0;
   border-top:    2px solid #ffffff;
   border-left:   2px solid #ffffff;
-  border-right:  2px solid #808080;
-  border-bottom: 2px solid #808080;
-  color: #000000;
+  border-right:  2px solid #d4ada8;
+  border-bottom: 2px solid #d4ada8;
+  color: #2a2a2a;
   font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace;
   font-size: 1rem;
   padding: 3px 24px;
