@@ -102,6 +102,8 @@ search: false
    ========================================================================== */
 
 [data-theme="win31"] img {
+  image-rendering: crisp-edges !important;
+  image-rendering: pixelated !important;
   filter:
     grayscale(60%)
     contrast(1.15)
@@ -146,6 +148,19 @@ search: false
 @keyframes scanline-roll {
   0%   { background-position: 0 0; }
   100% { background-position: 0 100vh; }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  [data-theme="win31"] img {
+    animation: none !important;
+  }
+  [data-theme="win31"] body::after {
+    animation: none !important;
+  }
+  [data-theme="win31"] .luna-hero::after {
+    animation: none !important;
+  }
 }
 
 html {
@@ -1675,17 +1690,6 @@ div.highlight {
   display: block !important;
 }
 
-[data-theme="win31"] .post-card img::after {
-  content: '' !important;
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  background: rgba(125, 184, 196, 0.3) !important;
-  pointer-events: none !important;
-}
-
 /* Hero moth — pixelated, fills space, no repeat */
 [data-theme="win31"] .luna-hero::before {
   background-size: cover !important;
@@ -1718,18 +1722,11 @@ div.highlight {
   animation: vhs-noise 0.12s steps(1) infinite !important;
 }
 
-/* All images in retro mode — pixelated with VHS effect */
-[data-theme="win31"] img {
-  image-rendering: crisp-edges !important;
-  image-rendering: pixelated !important;
-  filter: grayscale(60%) contrast(1.1) brightness(0.95) !important;
-}
-
 /* Project images also get the VHS treatment */
 [data-theme="win31"] .project-image {
   image-rendering: crisp-edges !important;
   image-rendering: pixelated !important;
-  filter: grayscale(60%) contrast(1.1) brightness(0.95) !important;
+  filter: grayscale(60%) contrast(1.15) brightness(0.92) saturate(0.75) sepia(15%) !important;
 }
 
 @keyframes vhs-noise {
