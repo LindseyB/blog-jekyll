@@ -1116,3 +1116,570 @@ div.highlight {
 .highlight .p {   /* Punctuation */
   color: var(--color-text-primary);
 }
+
+/* ==========================================================================
+   ️ WINDOWS 3.1 MODE — Konami Code Easter Egg Theme
+   Up Up Down Down Left Right Left Right
+   Classic gray, navy title bars, inset borders, bitmap font vibes.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
+
+/* Windows 3.1 System Font */
+@font-face {
+  font-family: 'Windows 3.1 System Font';
+  src: url('/assets/images/system-font-from-windows-3-1.otf.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+[data-theme="win31"] {
+  --color-bg-primary:    #c0c0c0;
+  --color-bg-secondary:  #d4d0c8;
+  --color-bg-tertiary:   #b0b0b0;
+  --color-bg-code:       #ffffff;
+  --color-bg-accent:     #000080;
+
+  --color-text-primary:  #000000;
+  --color-text-secondary:#222222;
+  --color-text-muted:    #555555;
+  --color-text-inverse:  #ffffff;
+
+  --color-accent-primary:   #000080;
+  --color-accent-secondary: #0000aa;
+  --color-accent-purple:    #800000;
+  --color-accent-purple-light: #008080;
+
+  --color-border:        #808080;
+  --color-border-accent: #000080;
+
+  --luna-gradient:       linear-gradient(180deg, #000080 0%, #1084d0 100%);
+  --luna-gradient-soft:  linear-gradient(180deg, rgba(0,0,128,0.15) 0%, rgba(16,132,208,0.10) 100%);
+
+  --shadow-sm:  2px 2px 0 #808080;
+  --shadow-md:  3px 3px 0 #808080;
+  --shadow-lg:  4px 4px 0 #808080;
+
+  --border-radius:    0px;
+  --border-radius-lg: 0px;
+
+  --font-display: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace;
+  --font-mono:    'Windows 3.1 System Font', 'IBM Plex Mono', monospace;
+}
+
+/* Desktop background with marble texture tiled */
+[data-theme="win31"] body {
+  background-color: #008080 !important;
+  background-image: url('/assets/images/marble.bmp') !important;
+  background-repeat: repeat !important;
+  background-attachment: fixed !important;
+  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
+  font-size: 11px !important;
+  color: #000000 !important;
+}
+
+/* Main wrapper becomes a raised window on the desktop */
+[data-theme="win31"] .site-wrapper {
+  background: #c0c0c0 !important;
+  border-top:    2px solid #ffffff !important;
+  border-left:   2px solid #ffffff !important;
+  border-right:  2px solid #808080 !important;
+  border-bottom: 2px solid #808080 !important;
+  box-shadow: 2px 2px 0 #000000 !important;
+  margin: 8px auto !important;
+  max-width: 960px !important;
+}
+
+/* Two-row header: navy title bar on top, gray menubar below */
+[data-theme="win31"] .site-header {
+  background: #c0c0c0 !important;
+  border-bottom: 2px solid #808080 !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+[data-theme="win31"] .site-header::before {
+  display: none !important;
+}
+
+/* Nav wraps into two rows */
+[data-theme="win31"] .site-nav {
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+
+/* Site title lives in a navy title bar */
+[data-theme="win31"] .site-title {
+  display: block !important;
+  background: #000080 !important;
+  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  text-decoration: none !important;
+  padding: 3px 8px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+[data-theme="win31"] .site-title:hover {
+  background: #1084d0 !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+/* Nav links row — gray menubar */
+[data-theme="win31"] .nav-links {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 4px !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 4px 6px !important;
+  background: #c0c0c0 !important;
+  border-top: 1px solid #ffffff !important;
+}
+
+/* Each nav link is a raised Windows button */
+[data-theme="win31"] .nav-link {
+  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
+  font-size: 0.9rem !important;
+  font-weight: normal !important;
+  color: #000000 !important;
+  background: #c0c0c0 !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  padding: 2px 10px !important;
+  text-decoration: none !important;
+  display: block !important;
+  transition: none !important;
+  /* Raised 3D border */
+  border-top:    2px solid #ffffff !important;
+  border-left:   2px solid #ffffff !important;
+  border-right:  2px solid #808080 !important;
+  border-bottom: 2px solid #808080 !important;
+}
+
+[data-theme="win31"] .nav-link:hover {
+  background: #c0c0c0 !important;
+  color: #000000 !important;
+  text-decoration: underline !important;
+  text-shadow: none !important;
+}
+
+[data-theme="win31"] .nav-link:active {
+  /* Depressed/sunken state */
+  border-top:    2px solid #808080 !important;
+  border-left:   2px solid #808080 !important;
+  border-right:  2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important;
+  padding: 3px 9px 1px 11px !important;
+}
+
+[data-theme="win31"] .nav-link::after {
+  display: none !important;
+}
+
+/* Main content area — sunken panel */
+[data-theme="win31"] .site-main {
+  background: #c0c0c0 !important;
+  padding: 12px !important;
+}
+
+/* Post cards as classic windows */
+[data-theme="win31"] .post-card {
+  background: #c0c0c0 !important;
+  border-top:    2px solid #ffffff !important;
+  border-left:   2px solid #ffffff !important;
+  border-right:  2px solid #808080 !important;
+  border-bottom: 2px solid #808080 !important;
+  box-shadow: 1px 1px 0 #000000 !important;
+  transform: none !important;
+  border-radius: 0 !important;
+  margin-bottom: 12px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+[data-theme="win31"] .post-card:hover {
+  transform: none !important;
+  box-shadow: 1px 1px 0 #000000 !important;
+}
+
+/* Post card title bar */
+[data-theme="win31"] .post-card .post-title,
+[data-theme="win31"] .post-card h2,
+[data-theme="win31"] .post-card h3 {
+  background: #000080 !important;
+  color: #ffffff !important;
+  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  text-shadow: none !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  padding: 3px 6px !important;
+  margin: 0 !important;
+}
+
+[data-theme="win31"] .post-card .post-title a,
+[data-theme="win31"] .post-card h2 a,
+[data-theme="win31"] .post-card h3 a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+[data-theme="win31"] .post-card .post-meta,
+[data-theme="win31"] .post-card .post-excerpt,
+[data-theme="win31"] .post-card p {
+  padding: 6px 8px !important;
+  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
+  font-size: 1.1rem !important;
+  color: #000000 !important;
+  border: none !important;
+  background: #c0c0c0 !important;
+}
+
+/* Headings */
+[data-theme="win31"] h1,
+[data-theme="win31"] h2,
+[data-theme="win31"] h3,
+[data-theme="win31"] h4 {
+  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
+  letter-spacing: 0 !important;
+  text-shadow: none !important;
+  color: #000000 !important;
+}
+
+[data-theme="win31"] h1 { font-size: 1.1rem !important; font-weight: bold !important; }
+[data-theme="win31"] h2 { font-size: 1rem   !important; font-weight: bold !important; }
+[data-theme="win31"] h3 { font-size: 0.9rem !important; font-weight: bold !important; }
+
+/* Post card title bars — re-assert white text after global h2 color override */
+[data-theme="win31"] .post-card .post-title,
+[data-theme="win31"] .post-card h2,
+[data-theme="win31"] .post-card h3,
+[data-theme="win31"] .post-card .post-header h2,
+[data-theme="win31"] .post-card .post-header h3 {
+  background: #000080 !important;
+  color: #ffffff !important;
+}
+
+[data-theme="win31"] .post-card .post-title a,
+[data-theme="win31"] .post-card h2 a,
+[data-theme="win31"] .post-card h3 a,
+[data-theme="win31"] .post-card .post-header h2 a,
+[data-theme="win31"] .post-card .post-header h3 a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+/* Body text */
+[data-theme="win31"] body,
+[data-theme="win31"] p,
+[data-theme="win31"] li,
+[data-theme="win31"] td {
+  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
+  font-size: 1.2rem !important;
+  color: #000000 !important;
+}
+
+/* Links — classic blue underline */
+[data-theme="win31"] a:not(.site-title):not(.nav-link) {
+  color: #000080 !important;
+  text-decoration: underline !important;
+  text-decoration-color: #000080 !important;
+}
+
+[data-theme="win31"] a:not(.site-title):not(.nav-link):hover {
+  color: #0000ff !important;
+  text-decoration-color: #0000ff !important;
+}
+
+/* Code blocks — sunken white text box */
+[data-theme="win31"] pre,
+[data-theme="win31"] code {
+  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
+  font-size: 1.2rem !important;
+  background: #ffffff !important;
+  color: #000000 !important;
+  border-top:    2px solid #808080 !important;
+  border-left:   2px solid #808080 !important;
+  border-right:  2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  text-shadow: none !important;
+}
+
+/* Post content border sunken */
+[data-theme="win31"] .post-content {
+  border-top:    2px solid #808080 !important;
+  border-left:   2px solid #808080 !important;
+  border-right:  2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important;
+  padding: 8px !important;
+  background: #ffffff !important;
+}
+
+/* Theme toggle becomes a classic Win3.1 button */
+[data-theme="win31"] .theme-toggle {
+  background: #c0c0c0 !important;
+  border-top:    2px solid #ffffff !important;
+  border-left:   2px solid #ffffff !important;
+  border-right:  2px solid #808080 !important;
+  border-bottom: 2px solid #808080 !important;
+  box-shadow: none !important;
+  color: #000000 !important;
+  font-size: 0.85rem !important;
+  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
+  border-radius: 0 !important;
+  padding: 3px 8px !important;
+}
+
+[data-theme="win31"] .theme-toggle:hover {
+  box-shadow: none !important;
+}
+
+[data-theme="win31"] .theme-toggle:active {
+  border-top:    2px solid #808080 !important;
+  border-left:   2px solid #808080 !important;
+  border-right:  2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important;
+}
+
+/* CTA Buttons — raised Win3.1 style */
+[data-theme="win31"] .cta-button {
+  background: #c0c0c0 !important;
+  color: #000000 !important;
+  border-top:    2px solid #ffffff !important;
+  border-left:   2px solid #ffffff !important;
+  border-right:  2px solid #808080 !important;
+  border-bottom: 2px solid #808080 !important;
+  box-shadow: 1px 1px 0 #000000 !important;
+  border-radius: 0 !important;
+  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
+  font-size: 1rem !important;
+  font-weight: normal !important;
+  padding: 4px 16px !important;
+  text-decoration: none !important;
+  transition: none !important;
+}
+
+[data-theme="win31"] .cta-button:hover {
+  background: #c0c0c0 !important;
+  color: #000000 !important;
+  text-decoration: underline !important;
+  transform: none !important;
+  box-shadow: 1px 1px 0 #000000 !important;
+}
+
+[data-theme="win31"] .cta-button:active {
+  border-top:    2px solid #808080 !important;
+  border-left:   2px solid #808080 !important;
+  border-right:  2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important;
+  box-shadow: none !important;
+  padding: 5px 15px 3px 17px !important;
+}
+
+/* Footer */
+[data-theme="win31"] .site-footer {
+  background: #c0c0c0 !important;
+  border-top: 2px solid #808080 !important;
+  box-shadow: none !important;
+  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
+  font-size: 1.1rem !important;
+  color: #000000 !important;
+}
+
+[data-theme="win31"] .site-footer p,
+[data-theme="win31"] .footer-copyright p {
+  color: #000000 !important;
+  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace !important;
+  font-size: 1.1rem !important;
+}
+
+[data-theme="win31"] .footer-link {
+  color: #000080 !important;
+}
+
+/* Luna moth in footer — subtle grayscale only, unchanged */
+[data-theme="win31"] .footer-moth {
+  filter: grayscale(60%) !important;
+}
+
+/* Hero moth — pixelated, fills space, no repeat */
+[data-theme="win31"] .luna-hero::before {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  image-rendering: pixelated !important;
+  image-rendering: crisp-edges !important;
+  opacity: 0.30 !important;
+  filter: grayscale(80%) contrast(1.2) !important;
+}
+
+/* VHS noise — scanlines overlay */
+[data-theme="win31"] .luna-hero::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  z-index: 3 !important;
+  pointer-events: none !important;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.08) 2px,
+      rgba(0, 0, 0, 0.08) 4px
+    ) !important;
+  animation: vhs-noise 0.12s steps(1) infinite !important;
+}
+
+/* All images in retro mode — pixelated with VHS effect */
+[data-theme="win31"] img {
+  image-rendering: pixelated !important;
+  image-rendering: crisp-edges !important;
+  filter: grayscale(40%) contrast(1.1) brightness(0.95) !important;
+}
+
+/* Project images also get the VHS treatment */
+[data-theme="win31"] .project-image {
+  image-rendering: pixelated !important;
+  image-rendering: crisp-edges !important;
+  filter: grayscale(40%) contrast(1.1) brightness(0.95) !important;
+}
+
+@keyframes vhs-noise {
+  0%   { transform: translateY(0px);   opacity: 1; }
+  10%  { transform: translateY(-2px);  opacity: 0.92; }
+  20%  { transform: translateY(1px);   opacity: 1; }
+  30%  { transform: translateY(-1px);  opacity: 0.95; }
+  40%  { transform: translateY(2px);   opacity: 0.9; }
+  50%  { transform: translateY(0px);   opacity: 1; }
+  60%  { transform: translateY(1px);   opacity: 0.93; }
+  70%  { transform: translateY(-2px);  opacity: 1; }
+  80%  { transform: translateY(0px);   opacity: 0.96; }
+  90%  { transform: translateY(1px);   opacity: 1; }
+  100% { transform: translateY(-1px);  opacity: 0.94; }
+}
+
+/* VHS horizontal glitch bar — flickers across the hero */
+[data-theme="win31"] .luna-hero-content {
+  position: relative !important;
+  z-index: 4 !important;
+}
+
+/* Win31 toast — classic dialog box style */
+.win31-toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background: #c0c0c0;
+  border-top:    2px solid #ffffff;
+  border-left:   2px solid #ffffff;
+  border-right:  2px solid #808080;
+  border-bottom: 2px solid #808080;
+  box-shadow: 3px 3px 0 #000000;
+  z-index: 100000;
+  opacity: 0;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  pointer-events: none;
+  min-width: 300px;
+  font-family: 'Arial', sans-serif;
+}
+
+.win31-toast.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.win31-toast-titlebar {
+  background: #000080;
+  color: #ffffff;
+  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 3px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.win31-toast-titlebar-icon {
+  margin-right: 4px;
+}
+
+.win31-toast-close {
+  background: #c0c0c0;
+  border-top:    1px solid #ffffff;
+  border-left:   1px solid #ffffff;
+  border-right:  1px solid #808080;
+  border-bottom: 1px solid #808080;
+  color: #000000;
+  font-size: 0.8rem;
+  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace;
+  width: 16px;
+  height: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  line-height: 1;
+}
+
+.win31-toast-body {
+  padding: 16px 20px 12px;
+  font-size: 1.1rem;
+  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace;
+  color: #000000;
+}
+
+.win31-toast-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.win31-toast-message {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.win31-toast-sub {
+  color: #444444;
+  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace;
+  font-size: 1rem;
+}
+
+.win31-toast-footer {
+  padding: 6px 12px 10px;
+  text-align: center;
+}
+
+.win31-toast-btn {
+  background: #c0c0c0;
+  border-top:    2px solid #ffffff;
+  border-left:   2px solid #ffffff;
+  border-right:  2px solid #808080;
+  border-bottom: 2px solid #808080;
+  color: #000000;
+  font-family: 'Windows 3.1 System Font', 'IBM Plex Mono', monospace;
+  font-size: 1rem;
+  padding: 3px 24px;
+  cursor: default;
+  min-width: 72px;
+}

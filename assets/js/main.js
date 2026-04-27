@@ -61,7 +61,11 @@ function initializeThemeToggle() {
   // Update icon based on current theme
   function updateThemeIcon() {
     const currentTheme = html.getAttribute('data-theme');
-    themeIcon.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+    if (currentTheme === 'win31') {
+      themeIcon.textContent = '🖥️';
+    } else {
+      themeIcon.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+    }
   }
 
   // Initialize icon
@@ -223,10 +227,105 @@ function showCopySuccess(button) {
 // Initialize Everything
 // ==========================================================================
 
+// ==========================================================================
+// 🕹️ Konami Code — 80s Theme Easter Egg
+// Sequence: ↑ ↑ ↓ ↓ ← → ← →
+// ==========================================================================
+
+function initializeKonamiCode() {
+  const KONAMI = [
+    'ArrowUp', 'ArrowUp',
+    'ArrowDown', 'ArrowDown',
+    'ArrowLeft', 'ArrowRight',
+    'ArrowLeft', 'ArrowRight'
+  ];
+  let progress = 0;
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === KONAMI[progress]) {
+      progress++;
+      if (progress === KONAMI.length) {
+        progress = 0;
+        toggleWin31Theme();
+      }
+    } else {
+      // Allow restarting the sequence from beginning if first key matches
+      progress = e.key === KONAMI[0] ? 1 : 0;
+    }
+  });
+}
+
+function toggleWin31Theme() {
+  var html = document.documentElement;
+  var current = html.getAttribute('data-theme');
+
+  if (current === 'win31') {
+    // Restore previous theme and remove persistence
+    var prev = localStorage.getItem('theme-before-win31') || 'dark';
+    html.setAttribute('data-theme', prev);
+    localStorage.setItem('theme', prev);
+    localStorage.removeItem('theme-before-win31');
+    showWin31Toast(false);
+  } else {
+    // Save current theme, activate Win3.1 and persist it
+    localStorage.setItem('theme-before-win31', current || 'dark');
+    html.setAttribute('data-theme', 'win31');
+    localStorage.setItem('theme', 'win31');
+    showWin31Toast(true);
+  }
+}
+
+function showWin31Toast(on) {
+  // Remove any existing toast
+  var existing = document.getElementById('win31-toast');
+  if (existing) existing.remove();
+
+  var toast = document.createElement('div');
+  toast.id = 'win31-toast';
+  toast.className = 'win31-toast';
+
+  var titleText = on ? 'Retro Mode' : 'Retro Mode';
+  var message   = on ? 'Welcome to retro mode!' : 'Exiting retro mode...';
+  var sub       = on ? 'Theme will persist between pages.' : 'Returning to modern theme.';
+  var icon      = on ? '🖥️' : '💾';
+
+  toast.innerHTML =
+    '<div class="win31-toast-titlebar">' +
+      '<span><span class="win31-toast-titlebar-icon">🖥️</span>' + titleText + '</span>' +
+      '<span class="win31-toast-close">✕</span>' +
+    '</div>' +
+    '<div class="win31-toast-body">' +
+      '<div class="win31-toast-icon">' + icon + '</div>' +
+      '<div class="win31-toast-message">' + message + '</div>' +
+      '<div class="win31-toast-sub">' + sub + '</div>' +
+    '</div>' +
+    '<div class="win31-toast-footer">' +
+      '<button class="win31-toast-btn">OK</button>' +
+    '</div>';
+
+  document.body.appendChild(toast);
+
+  requestAnimationFrame(function() {
+    requestAnimationFrame(function() {
+      toast.classList.add('show');
+    });
+  });
+
+  // Auto-dismiss after 3s
+  var dismiss = function() {
+    toast.classList.remove('show');
+    setTimeout(function() { if (toast.parentNode) toast.remove(); }, 200);
+  };
+  setTimeout(dismiss, 3000);
+  toast.querySelector('.win31-toast-btn').addEventListener('click', dismiss);
+  toast.querySelector('.win31-toast-close').addEventListener('click', dismiss);
+}
+
 // Initialize on DOM ready
 document.addEventListener('DOMContentLoaded', function() {
   initializeThemeToggle();
   initializeCopyFunctionality();
+  initializeKonamiCode();
 });
 
 // Initialize Last.fm widget on page load
