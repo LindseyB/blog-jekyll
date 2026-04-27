@@ -48,10 +48,6 @@
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const theme = savedTheme || (systemPrefersDark ? 'dark' : 'dark'); // Default to dark mode
     document.documentElement.setAttribute('data-theme', theme);
-    // If win31 is persisted, add a class so CSS can react before JS loads
-    if (theme === 'win31') {
-      document.documentElement.classList.add('win31-active');
-    }
   </script>
 </head>
 
