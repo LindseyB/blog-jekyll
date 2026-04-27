@@ -51,6 +51,9 @@ function addLastFmWidgetToDiv(divSelector, username, apiKey) {
 // Theme Toggle Functionality
 // ==========================================================================
 
+// Global reference for updateThemeIcon
+var _updateThemeIcon;
+
 function initializeThemeToggle() {
   const themeToggle = document.getElementById('theme-toggle');
   const themeIcon = document.getElementById('theme-icon');
@@ -59,26 +62,35 @@ function initializeThemeToggle() {
   if (!themeToggle || !themeIcon) return;
 
   // Update icon based on current theme
-  function updateThemeIcon() {
+  _updateThemeIcon = function() {
     const currentTheme = html.getAttribute('data-theme');
     if (currentTheme === 'win31') {
       themeIcon.textContent = '🖥️';
     } else {
       themeIcon.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
     }
-  }
+  };
 
   // Initialize icon
-  updateThemeIcon();
+  _updateThemeIcon();
 
-  // Theme toggle handler
+  // Theme toggle handler — explicitly handle win31 case
   themeToggle.addEventListener('click', function() {
     const currentTheme = html.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    let newTheme;
+
+    if (currentTheme === 'win31') {
+      // If in win31, restore the pre-win31 theme
+      newTheme = localStorage.getItem('theme-before-win31') || 'dark';
+      localStorage.removeItem('theme-before-win31');
+    } else {
+      // Normal dark/light toggle
+      newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    }
 
     html.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
-    updateThemeIcon();
+    _updateThemeIcon();
   });
 
   // Listen for system theme changes
@@ -86,7 +98,7 @@ function initializeThemeToggle() {
     if (!localStorage.getItem('theme')) {
       const newTheme = e.matches ? 'dark' : 'light';
       html.setAttribute('data-theme', newTheme);
-      updateThemeIcon();
+      _updateThemeIcon();
     }
   });
 }
@@ -242,6 +254,19 @@ function initializeKonamiCode() {
   let progress = 0;
 
   document.addEventListener('keydown', function(e) {
+    // Ignore if focus is on editable elements or if modifier keys are pressed
+    const activeElement = document.activeElement;
+    const isEditable = activeElement.tagName === 'INPUT' || 
+                       activeElement.tagName === 'TEXTAREA' || 
+                       activeElement.tagName === 'SELECT' || 
+                       activeElement.contentEditable === 'true';
+    const hasModifier = e.ctrlKey || e.metaKey || e.altKey || e.shiftKey;
+    
+    if (isEditable || hasModifier) {
+      progress = 0;
+      return;
+    }
+
     if (e.key === KONAMI[progress]) {
       progress++;
       if (progress === KONAMI.length) {
@@ -272,6 +297,10 @@ function toggleWin31Theme() {
     html.setAttribute('data-theme', 'win31');
     localStorage.setItem('theme', 'win31');
     showWin31Toast(true);
+  }
+  // Update the icon immediately
+  if (typeof _updateThemeIcon === 'function') {
+    _updateThemeIcon();
   }
 }
 
