@@ -423,6 +423,15 @@ table {
   border: 2px solid var(--color-accent-primary);
 }
 
+@media (max-width: 768px) {
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+}
 table thead tr {
   background: var(--color-accent-primary);
   color: var(--color-text-inverse);
