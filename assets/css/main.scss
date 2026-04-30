@@ -411,6 +411,74 @@ blockquote p {
 }
 
 /* ==========================================================================
+   Tables
+   ========================================================================== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  border: 2px solid var(--color-accent-primary);
+}
+
+@media (max-width: 768px) {
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+}
+table thead tr {
+  background: var(--color-accent-primary);
+  color: var(--color-text-inverse);
+}
+
+table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+table th:last-child {
+  border-right: none;
+}
+
+table td {
+  padding: 0.65rem 1rem;
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+}
+
+table td:last-child {
+  border-right: none;
+}
+
+table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+table tbody tr:nth-child(odd) {
+  background: var(--color-bg-primary);
+}
+
+table tbody tr:nth-child(even) {
+  background: var(--color-bg-secondary);
+}
+
+table tbody tr:hover {
+  background: var(--color-bg-accent);
+}
+
+/* ==========================================================================
    Code Highlighting & Syntax
    ========================================================================== */
 
