@@ -104,5 +104,39 @@
 
   <!-- Main JavaScript -->
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+  <!-- Mermaid Diagram Support -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>
+    function initMermaid() {
+      const theme = document.documentElement.getAttribute('data-theme') || 'dark';
+      mermaid.initialize({ 
+        startOnLoad: true, 
+        theme: theme === 'dark' ? 'dark' : 'default'
+      });
+      mermaid.contentLoaded();
+    }
+
+    // Initialize on load
+    initMermaid();
+
+    // Watch for theme changes
+    const themeToggle = document.getElementById('theme-toggle');
+    if (themeToggle) {
+      themeToggle.addEventListener('click', function() {
+        setTimeout(initMermaid, 100);
+      });
+    }
+
+    // Also watch for theme changes via MutationObserver
+    const observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        if (mutation.attributeName === 'data-theme') {
+          initMermaid();
+        }
+      });
+    });
+    observer.observe(document.documentElement, { attributes: true });
+  </script>
 </body>
 </html>
