@@ -104,5 +104,61 @@
 
   <!-- Main JavaScript -->
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+  <!-- Mermaid Diagram Support -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+  <script>
+    let mermaidInitTimeout;
+
+    function prepareMermaidBlocks() {
+      document.querySelectorAll('pre > code.language-mermaid').forEach((codeBlock) => {
+        const preBlock = codeBlock.parentElement;
+        const source = codeBlock.textContent;
+        const mermaidBlock = document.createElement('div');
+        mermaidBlock.className = 'mermaid';
+        mermaidBlock.setAttribute('data-mermaid-source', source);
+        mermaidBlock.textContent = source;
+        preBlock.replaceWith(mermaidBlock);
+      });
+
+      document.querySelectorAll('.mermaid[data-mermaid-source]').forEach((mermaidBlock) => {
+        mermaidBlock.removeAttribute('data-processed');
+        mermaidBlock.textContent = mermaidBlock.getAttribute('data-mermaid-source');
+      });
+    }
+
+    function initMermaid() {
+      const theme = document.documentElement.getAttribute('data-theme') || 'dark';
+      prepareMermaidBlocks();
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: theme === 'dark' ? 'dark' : 'default'
+      });
+      mermaid.run({
+        querySelector: '.mermaid'
+      });
+    }
+
+    function scheduleMermaidInit() {
+      clearTimeout(mermaidInitTimeout);
+      mermaidInitTimeout = setTimeout(initMermaid, 100);
+    }
+
+    // Initialize on load
+    initMermaid();
+
+    // Watch for theme changes via MutationObserver
+    const observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        if (mutation.attributeName === 'data-theme') {
+          scheduleMermaidInit();
+        }
+      });
+    });
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme']
+    });
+  </script>
 </body>
 </html>
