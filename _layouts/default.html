@@ -110,13 +110,33 @@
   <script>
     let mermaidInitTimeout;
 
+    function prepareMermaidBlocks() {
+      document.querySelectorAll('pre > code.language-mermaid').forEach((codeBlock) => {
+        const preBlock = codeBlock.parentElement;
+        const source = codeBlock.textContent;
+        const mermaidBlock = document.createElement('div');
+        mermaidBlock.className = 'mermaid';
+        mermaidBlock.setAttribute('data-mermaid-source', source);
+        mermaidBlock.textContent = source;
+        preBlock.replaceWith(mermaidBlock);
+      });
+
+      document.querySelectorAll('.mermaid[data-mermaid-source]').forEach((mermaidBlock) => {
+        mermaidBlock.removeAttribute('data-processed');
+        mermaidBlock.textContent = mermaidBlock.getAttribute('data-mermaid-source');
+      });
+    }
+
     function initMermaid() {
       const theme = document.documentElement.getAttribute('data-theme') || 'dark';
+      prepareMermaidBlocks();
       mermaid.initialize({
-        startOnLoad: true,
+        startOnLoad: false,
         theme: theme === 'dark' ? 'dark' : 'default'
       });
-      mermaid.contentLoaded();
+      mermaid.run({
+        querySelector: '.mermaid'
+      });
     }
 
     function scheduleMermaidInit() {
