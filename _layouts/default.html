@@ -108,35 +108,37 @@
   <!-- Mermaid Diagram Support -->
   <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
   <script>
+    let mermaidInitTimeout;
+
     function initMermaid() {
       const theme = document.documentElement.getAttribute('data-theme') || 'dark';
-      mermaid.initialize({ 
-        startOnLoad: true, 
+      mermaid.initialize({
+        startOnLoad: true,
         theme: theme === 'dark' ? 'dark' : 'default'
       });
       mermaid.contentLoaded();
     }
 
+    function scheduleMermaidInit() {
+      clearTimeout(mermaidInitTimeout);
+      mermaidInitTimeout = setTimeout(initMermaid, 100);
+    }
+
     // Initialize on load
     initMermaid();
 
-    // Watch for theme changes
-    const themeToggle = document.getElementById('theme-toggle');
-    if (themeToggle) {
-      themeToggle.addEventListener('click', function() {
-        setTimeout(initMermaid, 100);
-      });
-    }
-
-    // Also watch for theme changes via MutationObserver
+    // Watch for theme changes via MutationObserver
     const observer = new MutationObserver(function(mutations) {
       mutations.forEach(function(mutation) {
         if (mutation.attributeName === 'data-theme') {
-          initMermaid();
+          scheduleMermaidInit();
         }
       });
     });
-    observer.observe(document.documentElement, { attributes: true });
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme']
+    });
   </script>
 </body>
 </html>
