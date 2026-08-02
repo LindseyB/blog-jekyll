@@ -1,9 +1,12 @@
+- name: Aether & Arcana
+  link: https://aether-arcana.love
+  image: https://i.imgur.com/Ec8Ms9F.png
 - name: Moon API
   link: https://github.com/LindseyB/moon-api
   image: https://i.imgur.com/9ClaIx6.png
 - name: Astro Horoscope
   link: https://astro-horoscope.lol
-  image: https://i.imgur.com/osZHN7K.png
+  image: https://i.imgur.com/gTYXDMT.png
 - name: Hush
   link: https://lindseyb.github.io/hush/
   image: https://i.imgur.com/QEGyNIV.jpeg
